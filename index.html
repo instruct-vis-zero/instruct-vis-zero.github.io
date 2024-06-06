@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coherent Zero-Shot Visual Instruction Generation</title>
+    <link rel="stylesheet" href="style/bulma.min.css">
+    <link rel=stylesheet href="style/main.css">
+</head>
+<body>
+    
+    <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+                <h1 class="title is-2 publication-title">Coherent Zero-Shot Visual Instruction Generation</h1>
+                <!-- <div class="is-size-5 publication-authors">
+                    <span class="author-block"> 
+                    <a href='https://qqphung.github.io/'>Quynh Phung</a>   </span>
+                    <span class="author-block">
+                    <a href="https://songweige.github.io/">Songwei Ge</a>   </span>
+                  
+                  <span class="author-block">
+                    <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>
+                  </span>
+                </div>
+                <div class="is-size-5 publication-authors">
+                  <span class="author-block">University of Maryland, College Park</span>
+                </div>
+                <div class="is-size-5 publication-venue">
+                  CVPR 2024
+                </div> -->
+               <div class="is-size-5 publication-venue">
+                  Anonymous Authors
+                </div>
+                
+              
+    
+                <div class="column has-text-centered">
+                  <div class="publication-links">
+                    <span class="link-block">
+                      <a href="" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false"
+                            data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 384 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                              d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z">
+                            </path>
+                          </svg>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+    
+                    <span class="link-block">
+                      <a href="" class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <svg class="svg-inline--fa fa-github fa-w-16" aria-hidden="true" focusable="false"
+                            data-prefix="fab" data-icon="github" role="img" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 496 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                              d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                            </path>
+                          </svg><!-- <i class="fab fa-github"></i> Font Awesome fontawesome.com -->
+                        </span>
+                        <span>Code (coming soon) </span>
+                      </a>
+                    </span>
+                    
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+           
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </section>
+
+<!--     
+    <section class="hero">
+        <h1 class="title is-1">Consistent Zero-Shot Visual Instruction Generation</h1>
+        <h2 class="title is-3">Submission ID: 1059</h2>
+    </section> -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Visual instruction generation</h2>
+                <div class="columns is-centered">
+                    <div class="column is-12" style="width: 109%;">
+                        <img src="images/teaser_web.png" alt="Teaser" class="teaser">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hero is-light">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="columns is-centered">
+                   
+                        <div class="has-text-justified">
+                        <p class="abstract">
+                      
+                Despite the advances in text-to-image synthesis, particularly with diffusion models, generating visual instructions that require consistent representation and smooth state
+                transitions of objects across sequential steps remains a
+                formidable challenge. This paper introduces a simple, training-free framework to tackle the issues, capitalizing on the advancements in diffusion models and large language models (LLMs).
+                Our approach systematically integrates text comprehension and image generation to ensure
+                visual instructions are visually appealing and maintain consistency and accuracy throughout the instruction sequence.
+                We validate the effectiveness by testing multi-step instructions and comparing the text alignment and consistency
+                with several baselines. Our experiments show that our approach can visualize coherent and visually pleasing instructions
+                        </p>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- overall construction -->
+    <section class="hero">
+        
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">More visual instructions</h2>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a sample to view: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select id="sect-2-sample-select" onchange="select_sample2(this);">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a baseline to compare: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select onchange="select_baseline2(this);">
+                                <option value="baseline0" id="baseline-opt-0">Key-Value</option>
+                                <option value="baseline1" id="baseline-opt-1">Key-Value Mask</option>
+                                <option value="baseline2" id="baseline-opt-2">Key-Value Weight</option>
+                            </select>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-2-sample-baseline-0">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-2-sample-baseline-1">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-2-sample-baseline-2">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-2-sample-baseline-3">
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Baseline</div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container is-max-desktop">
+                <!-- <div class="container is-max-desktop"> -->
+                    <div class="columns is-centered">
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-2-sample-our-0">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-2-sample-our-1">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-2-sample-our-2">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-2-sample-our-3">
+                        </div>
+                        <div class="column baseline is-1">
+                            <div class="title is-4">Ours</div>
+                        </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 step">
+                        <p id="sect-2-step-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-2-step-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-2-step-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-2-step-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Steps</div>
+                    </div>
+                </div>
+                <!-- <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 state">
+                        <p id="sect-2-state-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-2-state-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-2-state-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-2-state-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">States</div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-12 has-text-center">
+                        <table class="table is-bordered is-fullwidth">
+                            <tbody id="sect-2-similarity">
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">State similarity</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    
+     <!-- CONSISTENCY -->
+    <section class="hero is-light">
+        
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Consistent Image Generation</h2>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a sample to view: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select id="sect-0-sample-select" onchange="select_sample0(this);">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a baseline to compare: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select onchange="select_baseline0(this);">
+                                <option value="baseline0" id="baseline-opt-0">Independent</option>
+                                <option value="baseline1" id="baseline-opt-1">Key-Value</option>
+                                <!-- <option value="baseline1" id="baseline-opt-1">Key-Value Mask</option>
+                                <option value="baseline2" id="baseline-opt-2">Key-Value Weight</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-0-sample-baseline-0">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-0-sample-baseline-1">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-0-sample-baseline-2">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-0-sample-baseline-3">
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Baseline</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-0-sample-our-0">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-0-sample-our-1">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-0-sample-our-2">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-0-sample-our-3">
+                        </div>
+                        <div class="column baseline is-1">
+                            <div class="title is-4">Ours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 step">
+                        <p id="sect-0-step-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-0-step-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-0-step-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-0-step-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Steps</div>
+                    </div>
+                </div>
+                <!-- <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 state">
+                        <p id="sect-0-state-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-0-state-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-0-state-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-0-state-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">States</div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-12 has-text-center">
+                        <table class="table is-bordered is-fullwidth">
+                            <tbody id="sect-0-similarity">
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">State similarity</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Text concat -->
+    <section class="hero">
+        
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">Concatenate Actions and States</h2>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a sample to view: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select id="sect-1-sample-select" onchange="select_sample1(this);">
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns is-vcentered">
+                    <div class="column is-6 has-text-right">
+                        <div class="title is-5 is-right">Select a baseline to compare: </div>
+                    </div>
+                    <div class="column has-text-left">
+                        <div class="select is-3 is-rounded">
+                            <select onchange="select_baseline1(this);">
+                                <option value="baseline0">Action</option>
+                                <option value="baseline1">Concatenate Actions</option>
+                                <!-- <option value="baseline2">Concatenate Actions and States</option> -->
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-centered">
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-1-sample-baseline-0">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-1-sample-baseline-1">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-1-sample-baseline-2">
+                    </div>
+                    <div class="column is-3">
+                        <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-1-sample-baseline-3">
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Baseline</div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/0.jpg" alt="Image 1" id="sect-1-sample-our-0">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/1.jpg" alt="Image 1" id="sect-1-sample-our-1">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/2.jpg" alt="Image 1" id="sect-1-sample-our-2">
+                        </div>
+                        <div class="column is-3">
+                            <img src="images/gpt_0/0/kv/3.jpg" alt="Image 1" id="sect-1-sample-our-3">
+                        </div>
+                        <div class="column baseline is-1">
+                            <div class="title is-4">Ours</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container is-max-desktop">
+                <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 step">
+                        <p id="sect-1-step-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-1-step-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-1-step-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 step">
+                        <p id="sect-1-step-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">Steps</div>
+                    </div>
+                </div>
+                <!-- <div class="columns is-centered is-vcentered">
+                    <div class="column is-3 state">
+                        <p id="sect-1-state-0">Step 1</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-1-state-1">Step 2</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-1-state-2">Step 3</p>
+                    </div>
+                    <div class="column is-3 state">
+                        <p id="sect-1-state-3">Step 4</p>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">States</div>
+                    </div>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-12 has-text-center">
+                        <table class="table is-bordered is-fullwidth">
+                            <tbody id="sect-1-similarity">
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                                <tr>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                    <td>1.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="column baseline is-1">
+                        <div class="title is-4">State similarity</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Framework -->
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container is-max-desktop">
+                <h2 class="title is-3">The framework</h2>
+                <div class="columns is-centered">
+                    <div class="column is-12" style="width: 109%;">
+                        <img src="images/method_all.png" alt="Teaser" class="teaser">
+                        <div class="has-text-justified">
+                        <p class="abstract">
+                            Our framework operates in two distinct phases. In the first phase,
+we use an LLM (e.g., the GPT-4 model) to generate the scene state after each step in the list of instructions. The generated scene state
+helps guide the image generation in the next stage. We also ask the LLM to generate the similarity between states. This matrix, with each
+row, indicating the visual similarity of a current visual step to others, guides the generation process. For example, to achieve high state
+similarity, we wish to maintain consistency as much as possible across the two steps. A low state similarity indicates the performed action
+changes the scene state substantially. In such cases, blindly encouraging consistency across steps may hurt the quality of the visualized
+instruction image. In the second phase, we utilize a shared attention layer—replacing the standard model—to allow queries from one image
+to access keys and values from others within the same instruction set. We enhance this sharing mechanism by applying standard attention
+masking, controlled by the similarity matrix, to tune the interaction between visual elements finely.
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+   
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content column has-text-left">
+          <h2 class="title">BibTeX</h2>
+          <pre><code>@article{Phung2024instruction,
+        author    = {Phung, Quynh and Ge, Songwei and Huang, Jia-Bin},
+        title     = {Coherent Zero-Shot Visual Instruction Generation },
+        journal   = {arXiv preprint arXiv:xxxx.xxxxx},
+        year      = {2024},
+      }</code></pre>
+        </div>
+      </section>
+
+    <footer class="footer">
+        <div class="columns is-centered">
+          <div class="column is-8">
+            <div class="content">
+              <p>
+                This website is licensed under a <a rel="license"
+                  href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                  Commons Attribution-ShareAlike 4.0 International License</a>.
+              </p>
+              <p>
+                Website adapted from the following <a href="https://github.com/nerfies/nerfies.github.io">source code</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+    
+      </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
