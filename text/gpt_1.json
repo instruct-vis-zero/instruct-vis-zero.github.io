@@ -1,0 +1,2804 @@
+{
+    "goals": [
+        {
+            "goal": "Planting a Flower in a Pot 0",
+            "steps": [
+                {
+                    "step": "Filling the Pot with Soil",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "soil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring soil into the empty pot.",
+                    "state_of_main_object": " An empty pot is now filled with soil."
+                },
+                {
+                    "step": "Placing the Seed",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "seed",
+                            "new"
+                        ]
+                    ],
+                    "action": "Placing the seed in the center of the soil.",
+                    "state_of_main_object": " A pot filled with soil, now containing a seed placed at its center."
+                },
+                {
+                    "step": "Adding More Soil",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "soil",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Adding more soil to cover the seed in the pot.",
+                    "state_of_main_object": " The pot now contains a seed that is covered by soil."
+                },
+                {
+                    "step": "Watering the Plant",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "watering can",
+                            "new"
+                        ]
+                    ],
+                    "action": "Watering the soil in the pot with a watering can.",
+                    "state_of_main_object": " The pot now contains moist soil, with the seed buried and watered."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning a Window 1",
+            "steps": [
+                {
+                    "step": "Preparing Cleaning Solution",
+                    "object": [
+                        [
+                            "bucket",
+                            "new"
+                        ],
+                        [
+                            "cleaning solution",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mixing water and cleaning solution in a bucket.",
+                    "state_of_main_object": " A bucket is filled with a mixture of water and cleaning solution."
+                },
+                {
+                    "step": "Wetting the Sponge",
+                    "object": [
+                        [
+                            "bucket",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "sponge",
+                            "new"
+                        ]
+                    ],
+                    "action": "Dipping the sponge into the cleaning solution.",
+                    "state_of_main_object": " A bucket filled with a mix of water and cleaning solution and a sponge immersed in it."
+                },
+                {
+                    "step": "Wiping the Window",
+                    "object": [
+                        [
+                            "window",
+                            "new"
+                        ],
+                        [
+                            "sponge",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Wiping the window glass with the wet sponge.",
+                    "state_of_main_object": " The window glass is wet and soapy, being cleaned with the sponge."
+                },
+                {
+                    "step": "Drying the Window",
+                    "object": [
+                        [
+                            "window",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "squeegee",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a squeegee to remove soap and water from the window.",
+                    "state_of_main_object": " The window glass is now clean and free of soap and water."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Building a Birdhouse 2",
+            "steps": [
+                {
+                    "step": "Cutting Wood",
+                    "object": [
+                        [
+                            "saw",
+                            "new"
+                        ],
+                        [
+                            "wood",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a saw to cut wood into pieces for the birdhouse.",
+                    "state_of_main_object": " Cut pieces of wood, intended for the birdhouse construction, lay scattered around."
+                },
+                {
+                    "step": "Assembling the Pieces",
+                    "object": [
+                        [
+                            "wood",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "hammer",
+                            "new"
+                        ],
+                        [
+                            "nails",
+                            "new"
+                        ]
+                    ],
+                    "action": "Assembling the pieces of wood using nails and a hammer.",
+                    "state_of_main_object": " The cut pieces of wood have been assembled into the structure of a birdhouse."
+                },
+                {
+                    "step": "Painting the Birdhouse",
+                    "object": [
+                        [
+                            "birdhouse",
+                            "new",
+                            2
+                        ],
+                        [
+                            "paint",
+                            "new"
+                        ],
+                        [
+                            "brush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Painting the assembled birdhouse with a brush.",
+                    "state_of_main_object": " The assembled birdhouse is now painted."
+                },
+                {
+                    "step": "Hanging the Birdhouse",
+                    "object": [
+                        [
+                            "birdhouse",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "tree",
+                            "new"
+                        ]
+                    ],
+                    "action": "Hanging the painted birdhouse on a branch of a tree.",
+                    "state_of_main_object": " The painted birdhouse is now hanging on a tree branch."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.9,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Vegetable Garden",
+            "steps": [
+                {
+                    "step": "Selecting the Area",
+                    "object": [
+                        [
+                            "garden space",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choosing a suitable location in the yard for the vegetable garden.",
+                    "state_of_main_object": " A specific location in the yard has been selected for the vegetable garden."
+                },
+                {
+                    "step": "Tilling the Soil",
+                    "object": [
+                        [
+                            "garden space",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "tiller",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a tiller to turn and aerate the soil in the marked area.",
+                    "state_of_main_object": " The marked area in the yard has been aerated and is ready for planting, with loosened soil from the tiller."
+                },
+                {
+                    "step": "Planting Seeds",
+                    "object": [
+                        [
+                            "garden space",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "seeds",
+                            "new"
+                        ]
+                    ],
+                    "action": "Planting various vegetable seeds in the prepared soil.",
+                    "state_of_main_object": " The marked area in the yard is now a vegetable garden with seeds planted in aerated soil."
+                },
+                {
+                    "step": "Watering the Garden",
+                    "object": [
+                        [
+                            "garden space",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "watering can",
+                            "new"
+                        ]
+                    ],
+                    "action": "Watering the newly planted seeds with a watering can.",
+                    "state_of_main_object": " The prepared soil in the yard is now a vegetable garden with newly planted, watered seeds."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Repotting a Houseplant 4",
+            "steps": [
+                {
+                    "step": "Removing the Plant",
+                    "object": [
+                        [
+                            "old pot",
+                            "new"
+                        ],
+                        [
+                            "plant",
+                            "new"
+                        ]
+                    ],
+                    "action": "Carefully taking the plant out of the old pot.",
+                    "state_of_main_object": " The houseplant has been removed from its original pot and is ready for repotting."
+                },
+                {
+                    "step": "Preparing the New Pot",
+                    "object": [
+                        [
+                            "new pot",
+                            "new"
+                        ],
+                        [
+                            "soil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling the new pot partially with fresh potting soil.",
+                    "state_of_main_object": " The plant has been removed from its old pot and is out in the open.\n\nstate 2"
+                },
+                {
+                    "step": "Placing the Plant",
+                    "object": [
+                        [
+                            "new pot",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "plant",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Positioning the plant into the center of the new pot.",
+                    "state_of_main_object": " The houseplant is now centered in the new pot with fresh potting soil partially surrounding it."
+                },
+                {
+                    "step": "Adding Soil and Watering",
+                    "object": [
+                        [
+                            "new pot",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "soil",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "watering can",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling the remaining space with soil and watering the plant.",
+                    "state_of_main_object": " The houseplant is securely positioned in a new pot filled with fresh soil and watered."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.4,
+                    0.4
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.4,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.4,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Installing a Drip Irrigation System 5",
+            "steps": [
+                {
+                    "step": "Laying Out the Tubing",
+                    "object": [
+                        [
+                            "garden space",
+                            "new"
+                        ],
+                        [
+                            "tubing",
+                            "new"
+                        ]
+                    ],
+                    "action": "Unrolling and arranging the drip tubing around plants in the garden.",
+                    "state_of_main_object": " The garden features unrolled drip tubing arranged around the plants."
+                },
+                {
+                    "step": "Connecting the Tubing",
+                    "object": [
+                        [
+                            "tubing",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "connectors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Connecting sections of tubing with connectors.",
+                    "state_of_main_object": " The drip tubing, arranged around plants in the garden, is now connected through various sections via connectors."
+                },
+                {
+                    "step": "Attaching the Water Source",
+                    "object": [
+                        [
+                            "tubing",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "water faucet",
+                            "new"
+                        ]
+                    ],
+                    "action": "Attaching the main tubing line to a water faucet.",
+                    "state_of_main_object": " The drip tubing, now connected in sections, is attached to a water faucet creating a completed irrigation system setup."
+                },
+                {
+                    "step": "Testing the System",
+                    "object": [
+                        [
+                            "tubing",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Turning on the faucet and checking for proper water flow through the tubing.",
+                    "state_of_main_object": " The drip irrigation system is now set up and operational with water flowing properly through the connected tubing."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Creating a Compost Bin 6",
+            "steps": [
+                {
+                    "step": "Selecting a Location",
+                    "object": [
+                        [
+                            "yard",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choosing a suitable and shaded spot in the yard for the compost bin.",
+                    "state_of_main_object": " A shaded spot in the yard has been selected for placing the compost bin."
+                },
+                {
+                    "step": "Assembling the Bin",
+                    "object": [
+                        [
+                            "compost bin kit",
+                            "new"
+                        ]
+                    ],
+                    "action": "Assembling the sides of the compost bin from a kit.",
+                    "state_of_main_object": " A partially constructed compost bin is in the chosen shaded area of the yard."
+                },
+                {
+                    "step": "Adding Organic Waste",
+                    "object": [
+                        [
+                            "compost bin",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "organic waste",
+                            "new"
+                        ]
+                    ],
+                    "action": "Adding layers of organic waste, such as kitchen scraps and yard debris.",
+                    "state_of_main_object": " The compost bin, placed in a shaded spot, is filled with a mixture of organic waste."
+                },
+                {
+                    "step": "Adding Organic Waste",
+                    "object": [
+                        [
+                            "compost bin",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "organic waste",
+                            "new"
+                        ]
+                    ],
+                    "action": "Adding layers of organic waste, such as kitchen scraps and yard debris.",
+                    "state_of_main_object": " The assembled compost bin in the yard is now layered with organic waste from kitchen scraps and yard debris."
+                },
+                {
+                    "step": "Maintaining the Compost",
+                    "object": [
+                        [
+                            "compost bin",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Regularly mixing and watering the compost to aid decomposition.",
+                    "state_of_main_object": " The compost bin contains moist, mixed organic waste in various stages of decomposition."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.9,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Setting Up a Patio 7",
+            "steps": [
+                {
+                    "step": "Choosing Patio Furniture",
+                    "object": [
+                        [
+                            "patio space",
+                            "new"
+                        ],
+                        [
+                            "furniture",
+                            "new"
+                        ]
+                    ],
+                    "action": "Selecting and purchasing suitable outdoor furniture for the patio.",
+                    "state_of_main_object": " A range of suitable outdoor furniture has been selected and placed on the patio."
+                },
+                {
+                    "step": "Arranging the Furniture",
+                    "object": [
+                        [
+                            "patio space",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "furniture",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Arranging the furniture on the patio according to a planned layout.",
+                    "state_of_main_object": " The patio is set up with an arranged layout of outdoor furniture."
+                },
+                {
+                    "step": "Adding Decorations",
+                    "object": [
+                        [
+                            "patio space",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "decorations",
+                            "new"
+                        ]
+                    ],
+                    "action": "Decorating the patio with items like plants, lights, and ornaments.",
+                    "state_of_main_object": " The patio is fully set, adorned with outdoor furniture, plants, lights, and ornaments."
+                },
+                {
+                    "step": "Final Setup",
+                    "object": [
+                        [
+                            "patio space",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Adding finishing touches such as outdoor cushions and a small fire pit.",
+                    "state_of_main_object": " The patio is fully set up with arranged furniture, decorations, and added final touches of outdoor cushions and a fire pit."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Building a Stone Pathway 8",
+            "steps": [
+                {
+                    "step": "Designing the Pathway",
+                    "object": [
+                        [
+                            "yard",
+                            "new"
+                        ],
+                        [
+                            "chalk",
+                            "new"
+                        ]
+                    ],
+                    "action": "Marking out the pathway design in the yard with chalk.",
+                    "state_of_main_object": " The yard contains a chalk outline depicting the future stone pathway's design."
+                },
+                {
+                    "step": "Laying the Foundation",
+                    "object": [
+                        [
+                            "yard",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "gravel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Spreading gravel as the foundation for the stones.",
+                    "state_of_main_object": " A pathway area, marked with chalk in the yard, is now covered with a layer of gravel."
+                },
+                {
+                    "step": "Placing the Stones",
+                    "object": [
+                        [
+                            "yard",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "stones",
+                            "new"
+                        ]
+                    ],
+                    "action": "Placing stones along the gravel to form the pathway.",
+                    "state_of_main_object": " A pathway made of neatly arranged stones is laid over the gravel foundation in the yard."
+                },
+                {
+                    "step": "Filling Gaps",
+                    "object": [
+                        [
+                            "yard",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "sand",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling gaps between the stones with sand to secure them in place.",
+                    "state_of_main_object": " The pathway is complete, with securely placed stones embedded in gravel, and the gaps between them filled with sand."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Fresh Orange Juice",
+            "steps": [
+                {
+                    "step": "Selecting Oranges",
+                    "object": [
+                        [
+                            "oranges",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choosing fresh, ripe oranges for juicing.",
+                    "state_of_main_object": " A selection of fresh, ripe oranges is prepared for juicing."
+                },
+                {
+                    "step": "Cutting the Oranges",
+                    "object": [
+                        [
+                            "oranges",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cutting the oranges in half to prepare for juicing.",
+                    "state_of_main_object": " The ripe oranges have been cut in half and are ready to be juiced."
+                },
+                {
+                    "step": "Juicing the Oranges",
+                    "object": [
+                        [
+                            "orange halves",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "juicer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pressing the orange halves on a juicer to extract the juice.",
+                    "state_of_main_object": " Fresh orange juice is collected in a container, separate from the discarded orange peels."
+                },
+                {
+                    "step": "Serving the Juice",
+                    "object": [
+                        [
+                            "juice",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "glass",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the fresh orange juice into a glass to serve.",
+                    "state_of_main_object": " A glass filled with fresh orange juice is ready to be served."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing a Fruit Salad 10",
+            "steps": [
+                {
+                    "step": "Gathering Ingredients",
+                    "object": [
+                        [
+                            "fruits",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collecting various fruits such as apples, bananas, and grapes.",
+                    "state_of_main_object": " Different types of fruits like apples, bananas, and grapes are gathered together, ready for preparation."
+                },
+                {
+                    "step": "Cutting the Fruits",
+                    "object": [
+                        [
+                            "fruits",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cutting the fruits into small pieces.",
+                    "state_of_main_object": " The collected fruits like apples, bananas, and grapes have been chopped into small pieces."
+                },
+                {
+                    "step": "Mixing the Fruits",
+                    "object": [
+                        [
+                            "cut fruits",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mixing all the cut fruits in a large bowl.",
+                    "state_of_main_object": " A large bowl filled with pieces of cut fruits like apples, bananas, and grapes."
+                },
+                {
+                    "step": "Adding Dressing",
+                    "object": [
+                        [
+                            "mixed fruits",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "dressing",
+                            "new"
+                        ]
+                    ],
+                    "action": "Drizzling dressing over the mixed fruits to enhance flavor.",
+                    "state_of_main_object": " The large bowl now contains fruit salad with added dressing."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Lemonade 11",
+            "steps": [
+                {
+                    "step": "Squeezing Lemons",
+                    "object": [
+                        [
+                            "lemons",
+                            "new"
+                        ],
+                        [
+                            "juicer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a hand juicer to squeeze juice from fresh lemons.",
+                    "state_of_main_object": " There is fresh lemon juice resulting from the squeezed lemons using a hand juicer."
+                },
+                {
+                    "step": "Mixing with Water and Sugar",
+                    "object": [
+                        [
+                            "lemon juice",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ],
+                        [
+                            "pitcher",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mixing the lemon juice with water and sugar in a pitcher.",
+                    "state_of_main_object": " A pitcher is filled with a mixture of freshly squeezed lemon juice, water, and sugar."
+                },
+                {
+                    "step": "Chilling the Lemonade",
+                    "object": [
+                        [
+                            "lemonade mix",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "refrigerator",
+                            "new"
+                        ]
+                    ],
+                    "action": "put the lemonade to refrigerator .",
+                    "state_of_main_object": " The lemonade, a mixture of lemon juice, water, and sugar, is cooling in the refrigerator."
+                },
+                {
+                    "step": "Serving Chilled Lemonade",
+                    "object": [
+                        [
+                            "chilled lemonade",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "glasses",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the chilled lemonade into glasses to serve.",
+                    "state_of_main_object": " Glasses are filled with chilled lemonade, ready to be consumed."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing Iced Tea 12",
+            "steps": [
+                {
+                    "step": "Boiling Water",
+                    "object": [
+                        [
+                            "kettle",
+                            "new"
+                        ]
+                    ],
+                    "action": "Boiling water in a kettle.",
+                    "state_of_main_object": " A kettle containing boiling water sits on the stove."
+                },
+                {
+                    "step": "Steeping the Tea",
+                    "object": [
+                        [
+                            "tea bags",
+                            "new"
+                        ],
+                        [
+                            "hot water",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Steeping tea bags in the hot water to brew strong tea.",
+                    "state_of_main_object": " A kettle containing brewed, strong tea is set aside to cool."
+                },
+                {
+                    "step": "Cooling the Tea",
+                    "object": [
+                        [
+                            "brewed tea",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Allowing the tea to cool down to room temperature.",
+                    "state_of_main_object": " The kettle contains cooled, brewed tea at room temperature."
+                },
+                {
+                    "step": "Serving with Ice",
+                    "object": [
+                        [
+                            "cooled tea",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "ice",
+                            "new"
+                        ],
+                        [
+                            "glasses",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the cooled tea over ice in glasses to serve.",
+                    "state_of_main_object": " Glasses filled with iced tea are ready to be served."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Pomegranate Juice 13",
+            "steps": [
+                {
+                    "step": "Cutting the Pomegranate",
+                    "object": [
+                        [
+                            "pomegranate",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cutting the pomegranate into halves to expose the seeds.",
+                    "state_of_main_object": " The pomegranate has been halved, revealing the seeds inside."
+                },
+                {
+                    "step": "Extracting the Seeds",
+                    "object": [
+                        [
+                            "pomegranate halves",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Removing the seeds from the halves and collecting them in a bowl.",
+                    "state_of_main_object": " There is a bowl filled with seeds removed from halved pomegranates."
+                },
+                {
+                    "step": "Juicing the Seeds",
+                    "object": [
+                        [
+                            "pomegranate seeds",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "juicer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pressing the seeds in a juicer to extract the juice.",
+                    "state_of_main_object": " The bowl of seeds is now transformed into a container full of fresh pomegranate juice."
+                },
+                {
+                    "step": "Serving the Juice",
+                    "object": [
+                        [
+                            "pomegranate juice",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "glass",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the juice into a glass and adding ice if desired.",
+                    "state_of_main_object": " There is a glass of fresh, possibly iced, pomegranate juice ready to be consumed."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing a Berry Parfait 14",
+            "steps": [
+                {
+                    "step": "Layering Yogurt",
+                    "object": [
+                        [
+                            "parfait glass",
+                            "new"
+                        ],
+                        [
+                            "yogurt",
+                            "new"
+                        ]
+                    ],
+                    "action": "Scooping yogurt into a tall parfait glass, creating the first layer.",
+                    "state_of_main_object": " A tall parfait glass contains a layer of yogurt."
+                },
+                {
+                    "step": "Adding Berries",
+                    "object": [
+                        [
+                            "parfait glass",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "berries",
+                            "new"
+                        ]
+                    ],
+                    "action": "Adding a layer of fresh mixed berries on top of the yogurt.",
+                    "state_of_main_object": " A tall parfait glass now contains a layer of yogurt topped with a layer of fresh mixed berries."
+                },
+                {
+                    "step": "Adding Granola",
+                    "object": [
+                        [
+                            "parfait glass",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "granola",
+                            "new"
+                        ]
+                    ],
+                    "action": "Sprinkling granola over the berries to add a crunchy texture.",
+                    "state_of_main_object": " In the tall parfait glass, there are layers of yogurt, fresh mixed berries, and a sprinkling of granola on top."
+                },
+                {
+                    "step": "Garnishing and Serving",
+                    "object": [
+                        [
+                            "parfait glass",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "mint leaves",
+                            "new"
+                        ]
+                    ],
+                    "action": "Garnishing the top with mint leaves and perhaps a few more berries before serving.",
+                    "state_of_main_object": " A gourmet Berry Parfait is standing ready, characterized by layers of yogurt, mixed berries, and granola, topped with mint leaves and additional berries as garnish."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning and Organizing a Closet",
+            "steps": [
+                {
+                    "step": "Emptying the Closet",
+                    "object": [
+                        [
+                            "closet",
+                            "new"
+                        ]
+                    ],
+                    "action": "Removing all items from the closet to assess what is stored.",
+                    "state_of_main_object": " The closet is empty, and all the items previously stored in it are now visible and ready for assessment."
+                },
+                {
+                    "step": "Sorting the Items",
+                    "object": [
+                        [
+                            "clothing",
+                            "new"
+                        ],
+                        [
+                            "boxes",
+                            "new"
+                        ]
+                    ],
+                    "action": "Sorting the items into categories like keep, donate, and discard.",
+                    "state_of_main_object": " The items from the closet are arranged into separate piles based on categories - keep, donate, discard."
+                },
+                {
+                    "step": "Cleaning the Closet",
+                    "object": [
+                        [
+                            "closet",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "cleaning supplies",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cleaning the interior of the closet with appropriate cleaning supplies.",
+                    "state_of_main_object": " The interior of the closet is empty and clean, while groups of items to keep, donate, and discard are carefully separated outside."
+                },
+                {
+                    "step": "Reorganizing the Closet",
+                    "object": [
+                        [
+                            "closet",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "organized clothing",
+                            "new"
+                        ]
+                    ],
+                    "action": "Reorganizing and placing items back into the closet in an orderly fashion.",
+                    "state_of_main_object": " The closet is now clean and organized, with items neatly stored in their respective places."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.9,
+                    0.9
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    0.0,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Vacuuming a Living Room",
+            "steps": [
+                {
+                    "step": "Preparing the Area",
+                    "object": [
+                        [
+                            "living room",
+                            "new"
+                        ]
+                    ],
+                    "action": "Removing small items and clutter from the floor to prepare for vacuuming.",
+                    "state_of_main_object": " The living room floor is clear of small items and clutter, ready for vacuuming."
+                },
+                {
+                    "step": "Vacuuming the Carpet",
+                    "object": [
+                        [
+                            "vacuum cleaner",
+                            "new"
+                        ],
+                        [
+                            "carpet",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Using the vacuum cleaner to clean the carpet thoroughly.",
+                    "state_of_main_object": " The living room's carpet is now clean and free of dirt and dust."
+                },
+                {
+                    "step": "Vacuuming Under Furniture",
+                    "object": [
+                        [
+                            "vacuum cleaner",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "furniture",
+                            "new"
+                        ]
+                    ],
+                    "action": "Moving light furniture slightly to vacuum underneath and behind them.",
+                    "state_of_main_object": " A clean living room with a neat carpet and dust-free furniture surroundings."
+                },
+                {
+                    "step": "Replacing Furniture and Items",
+                    "object": [
+                        [
+                            "furniture",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "living room",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Putting furniture and any moved items back into their original positions.",
+                    "state_of_main_object": " The living room is tidy, with all furniture and items returned to their places and the carpet thoroughly vacuumed."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Fixing a Leaky Faucet 17",
+            "steps": [
+                {
+                    "step": "Turning Off Water Supply",
+                    "object": [
+                        [
+                            "faucet",
+                            "new"
+                        ],
+                        [
+                            "valve",
+                            "new"
+                        ]
+                    ],
+                    "action": "Shutting off the water supply valve under the sink to stop water flow to the faucet.",
+                    "state_of_main_object": " The water supply valve under the sink is in the off position, preventing water flow to the faucet."
+                },
+                {
+                    "step": "Disassembling the Faucet",
+                    "object": [
+                        [
+                            "faucet",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "tools",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using tools to remove the faucet handle and access the internal components.",
+                    "state_of_main_object": " The faucet handle has been removed, exposing the internal components of the faucet for repair."
+                },
+                {
+                    "step": "Replacing the Washer",
+                    "object": [
+                        [
+                            "faucet",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "washer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Replacing the old washer with a new one to fix the leak.",
+                    "state_of_main_object": " The faucet handle has been opened, revealing the replaced, new washer, set to prevent further leakage."
+                },
+                {
+                    "step": "Reassembling the Faucet",
+                    "object": [
+                        [
+                            "faucet",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Reassembling the faucet and turning the water supply back on to check for leaks.",
+                    "state_of_main_object": " The faucet, now put back together, is receiving water and the potential leak should be fixed."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Feeding a Dog 18",
+            "steps": [
+                {
+                    "step": "Preparing Dog Food",
+                    "object": [
+                        [
+                            "dog food",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Measuring the correct amount of dog food and placing it into the bowl.",
+                    "state_of_main_object": " A bowl is filled with the measured amount of dog food."
+                },
+                {
+                    "step": "Placing the Food",
+                    "object": [
+                        [
+                            "bowl",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "feeding area",
+                            "new"
+                        ]
+                    ],
+                    "action": "Setting the bowl of dog food down in the feeding area.",
+                    "state_of_main_object": " A bowl filled with the correct amount of dog food is in the dog's feeding area."
+                },
+                {
+                    "step": "Adding Water",
+                    "object": [
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling a second bowl with fresh water and placing it next to the food.",
+                    "state_of_main_object": " In the feeding area, there is a bowl filled with dog food and another bowl filled with fresh water."
+                },
+                {
+                    "step": "Calling the Dog",
+                    "object": [
+                        [
+                            "dog",
+                            "new"
+                        ]
+                    ],
+                    "action": "Calling the dog over to eat and drink.",
+                    "state_of_main_object": " The dog is now at its feeding area, where a bowl of food and a bowl of fresh water await."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.9,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Watering Indoor Plants 19",
+            "steps": [
+                {
+                    "step": "Checking Soil Moisture",
+                    "object": [
+                        [
+                            "plant",
+                            "new"
+                        ],
+                        [
+                            "soil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Feeling the soil with fingers to check the plant in pot.",
+                    "state_of_main_object": " A hand has been introduced into the pot, with its fingers touching the pot's soil to assess the plant's watering needs."
+                },
+                {
+                    "step": "Filling the Watering Can",
+                    "object": [
+                        [
+                            "watering can",
+                            "new"
+                        ],
+                        [
+                            "water tap",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling the watering can with water.",
+                    "state_of_main_object": " The fingers touch the soil in the pot for moisture checking while the watering can is ready and filled with water."
+                },
+                {
+                    "step": "Watering the Plant",
+                    "object": [
+                        [
+                            "plant",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "watering can",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Gently pouring water from the can into the plant's soil until sufficiently moist.",
+                    "state_of_main_object": " The plant in the pot now has moist soil, after being watered from the watering can."
+                },
+                {
+                    "step": "Draining Excess Water",
+                    "object": [
+                        [
+                            "plant",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Allowing any excess water to drain away from the plant's pot.",
+                    "state_of_main_object": " The indoor plant's soil is well-hydrated and excess water is drained, leaving the plant properly watered."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Pruning Flowering Plants",
+            "steps": [
+                {
+                    "step": "Selecting the Right Tools",
+                    "object": [
+                        [
+                            "pruning shears",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choosing sharp pruning shears suitable for cutting plant stems.",
+                    "state_of_main_object": " Sharp pruning shears, ready for use, are the main objects present."
+                },
+                {
+                    "step": "Identifying Dead Flowers",
+                    "object": [
+                        [
+                            "flowering plant",
+                            "new"
+                        ]
+                    ],
+                    "action": "Inspecting the plant to identify and select dead or fading flowers for removal.",
+                    "state_of_main_object": " The flowering plant is ready for pruning, with its dead or fading flowers clearly identified."
+                },
+                {
+                    "step": "Pruning the Flowers",
+                    "object": [
+                        [
+                            "flowering plant",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "pruning shears",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Carefully cutting away dead flowers at their stems to promote new growth.",
+                    "state_of_main_object": " The plant appears tidier and healthier, with dead flowers removed and space for new growth."
+                },
+                {
+                    "step": "Cleaning Up",
+                    "object": [
+                        [
+                            "flowering plant",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "pruned flowers",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collecting and disposing of the pruned flowers and any fallen leaves.",
+                    "state_of_main_object": " The flowering plant is pruned, clear of dead flowers and fallen leaves, and ready for nurturing new growth."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Planting Flower Bulbs 21",
+            "steps": [
+                {
+                    "step": "Preparing the Soil",
+                    "object": [
+                        [
+                            "garden soil",
+                            "new"
+                        ],
+                        [
+                            "trowel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a trowel to loosen the soil and prepare it for planting bulbs.",
+                    "state_of_main_object": " The soil is disturbed and prepared, ready to receive flower bulbs."
+                },
+                {
+                    "step": "Planting the Bulbs",
+                    "object": [
+                        [
+                            "flower bulbs",
+                            "new"
+                        ],
+                        [
+                            "garden soil",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Placing flower bulbs at the correct depth into the prepared soil, spaced appropriately.",
+                    "state_of_main_object": " The prepared soil now has flower bulbs planted at the right depth and appropriately spaced."
+                },
+                {
+                    "step": "Covering the Bulbs",
+                    "object": [
+                        [
+                            "flower bulbs",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "garden soil",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Covering the bulbs with soil and patting down gently to secure them.",
+                    "state_of_main_object": " The flower bulbs are planted into the soil and secured, ready for growth."
+                },
+                {
+                    "step": "Watering the Planted Bulbs",
+                    "object": [
+                        [
+                            "planted bulbs",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "watering can",
+                            "new"
+                        ]
+                    ],
+                    "action": "Watering the area where the bulbs have been planted.",
+                    "state_of_main_object": " The soil above the planted flower bulbs is moistened after watering."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Tomatoes 22",
+            "steps": [
+                {
+                    "step": "Checking Ripeness",
+                    "object": [
+                        [
+                            "tomato plant",
+                            "new"
+                        ]
+                    ],
+                    "action": "Inspecting tomatoes on the plant to determine if they are ripe, looking for a deep red color.",
+                    "state_of_main_object": " The tomato plant bears tomatoes, some of which show a deep red color, indicating they are ripe."
+                },
+                {
+                    "step": "Picking Tomatoes",
+                    "object": [
+                        [
+                            "ripe tomatoes",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "hands",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gently pulling ripe tomatoes from the vine, supporting the stem with one hand and twisting the fruit with the other.",
+                    "state_of_main_object": " The tomato plant is slightly less laden, with some deep red tomatoes now removed from the vine."
+                },
+                {
+                    "step": "Collecting the Tomatoes",
+                    "object": [
+                        [
+                            "harvested tomatoes",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Placing the picked tomatoes gently into a basket to avoid bruising.",
+                    "state_of_main_object": " A basket contains freshly picked, ripe tomatoes from the plant."
+                },
+                {
+                    "step": "Storing Tomatoes",
+                    "object": [
+                        [
+                            "basket of tomatoes",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Storing the basket in a cool, dry place to preserve freshness until use.",
+                    "state_of_main_object": " The basket filled with harvested tomatoes is safely stored in a cool, dry area, preserving their freshness."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Apples 23",
+            "steps": [
+                {
+                    "step": "Checking Apple Ripeness",
+                    "object": [
+                        [
+                            "apple tree",
+                            "new"
+                        ]
+                    ],
+                    "action": "Examining apples on the tree for maturity, looking for firmness and full color.",
+                    "state_of_main_object": " The tree is populated with apples showing signs of maturity, characterised by firm texture and full color."
+                },
+                {
+                    "step": "Picking Apples",
+                    "object": [
+                        [
+                            "ripe apples",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "ladder",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a ladder to reach high branches and carefully twisting apples off the tree.",
+                    "state_of_main_object": " The apple tree has fewer apples, and some ripe apples now lay nearby, carefully plucked from the higher branches."
+                },
+                {
+                    "step": "Gathering Apples",
+                    "object": [
+                        [
+                            "picked apples",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Placing the picked apples into a basket, taking care not to drop or bruise them.",
+                    "state_of_main_object": " A basket is filled with freshly picked apples, which are firm, colorful, and free from bruises."
+                },
+                {
+                    "step": "Storing Apples",
+                    "object": [
+                        [
+                            "basket of apples",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Keeping the apples in a cool, ventilated area to extend their shelf life.",
+                    "state_of_main_object": " The apples are now stored in a cool, ventilated area, ready for long-term preservation."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Strawberries 24",
+            "steps": [
+                {
+                    "step": "Identifying Ready Strawberries",
+                    "object": [
+                        [
+                            "strawberry plant",
+                            "new"
+                        ]
+                    ],
+                    "action": "Looking for strawberries that are fully red without white or green spots, indicating they are ready to pick.",
+                    "state_of_main_object": " The focus is on ripe, fully red strawberries, standing out from others without white or green spots."
+                },
+                {
+                    "step": "Plucking Strawberries",
+                    "object": [
+                        [
+                            "ripe strawberries",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "hands",
+                            "new"
+                        ]
+                    ],
+                    "action": "Carefully detaching ripe strawberries from the plant by pinching the stem between fingers.",
+                    "state_of_main_object": " Ripe, fully red strawberries are being collected and removed from the plant."
+                },
+                {
+                    "step": "Collecting Strawberries",
+                    "object": [
+                        [
+                            "harvested strawberries",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Placing the plucked strawberries into a basket gently to avoid squashing.",
+                    "state_of_main_object": " A basket is now filled with fresh, carefully picked strawberries."
+                },
+                {
+                    "step": "Storing Strawberries",
+                    "object": [
+                        [
+                            "basket of strawberries",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Storing the basket in a cool place or refrigerating to maintain freshness.",
+                    "state_of_main_object": " A basket filled with freshly picked strawberries is now stored in a cool place or a refrigerator to remain fresh."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Herbs",
+            "steps": [
+                {
+                    "step": "Selecting Mature Herbs",
+                    "object": [
+                        [
+                            "herb garden",
+                            "new"
+                        ]
+                    ],
+                    "action": "Identifying mature herbs ready for harvest, such as basil or mint, which have full, lush leaves.",
+                    "state_of_main_object": " Mature herbs, like basil or mint, with full and lush leaves are identified and ready for harvesting."
+                },
+                {
+                    "step": "Cutting Herbs",
+                    "object": [
+                        [
+                            "mature herbs",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "scissors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using scissors to cut the herbs cleanly near the stem without damaging the plant.",
+                    "state_of_main_object": " The herbs have been harvested off of the plants, leaving the plants undamaged."
+                },
+                {
+                    "step": "Gathering Cut Herbs",
+                    "object": [
+                        [
+                            "cut herbs",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collecting the cut herbs and placing them gently into a basket.",
+                    "state_of_main_object": " A basket is filled with freshly cut herbs, while the herb plants are slightly trimmed but still healthy."
+                },
+                {
+                    "step": "Storing Herbs",
+                    "object": [
+                        [
+                            "basket of herbs",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Storing the herbs in a cool, dry place or using them fresh to ensure flavor is preserved.",
+                    "state_of_main_object": " The mature herbs are harvested and placed either in storage in a cool, dry place or used immediately, thereby preserving their flavor."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Grilled Cheese Sandwich 26",
+            "steps": [
+                {
+                    "step": "Preparing Ingredients",
+                    "object": [
+                        [
+                            "bread",
+                            "new"
+                        ],
+                        [
+                            "cheese",
+                            "new"
+                        ],
+                        [
+                            "butter",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gathering slices of bread, cheese, and butter.",
+                    "state_of_main_object": "Ingredients are ready on the countertop."
+                },
+                {
+                    "step": "Buttering the Bread",
+                    "object": [
+                        [
+                            "bread",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "butter",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "butter knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Spreading butter on one side of each bread slice.",
+                    "state_of_main_object": "Bread slices are buttered on one side."
+                },
+                {
+                    "step": "Assembling the Sandwich",
+                    "object": [
+                        [
+                            "bread",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "cheese",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Placing cheese between two slices of bread with the buttered sides facing out.",
+                    "state_of_main_object": "The sandwich is assembled and ready to grill."
+                },
+                {
+                    "step": "Grilling the Sandwich",
+                    "object": [
+                        [
+                            "sandwich",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "pan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cooking the sandwich in a pan over medium heat until the bread is golden and the cheese is melted.",
+                    "state_of_main_object": "The grilled cheese sandwich is golden and ready to serve."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Scrambled Eggs 27",
+            "steps": [
+                {
+                    "step": "Cracking Eggs",
+                    "object": [
+                        [
+                            "eggs",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cracking eggs into a bowl.",
+                    "state_of_main_object": "Eggs are cracked and in the bowl."
+                },
+                {
+                    "step": "Whisking Eggs",
+                    "object": [
+                        [
+                            "eggs",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "whisk",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a whisk to beat the eggs until they are smooth.",
+                    "state_of_main_object": "The eggs are well-beaten and ready to cook."
+                },
+                {
+                    "step": "Cooking Eggs",
+                    "object": [
+                        [
+                            "beaten eggs",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "pan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the eggs into a heated pan and stirring gently until they set and are fully cooked.",
+                    "state_of_main_object": "The eggs are scrambled and cooked."
+                },
+                {
+                    "step": "Serving the Eggs",
+                    "object": [
+                        [
+                            "scrambled eggs",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "plate",
+                            "new"
+                        ]
+                    ],
+                    "action": "Scooping the scrambled eggs onto a plate.",
+                    "state_of_main_object": "The scrambled eggs are plated and ready to eat."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing Instant Ramen 28",
+            "steps": [
+                {
+                    "step": "Boiling Water",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Filling a pot with water and bringing it to a boil.",
+                    "state_of_main_object": "Water is boiling in the pot."
+                },
+                {
+                    "step": "Adding Noodles",
+                    "object": [
+                        [
+                            "ramen noodles",
+                            "new"
+                        ],
+                        [
+                            "boiling water",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Adding instant ramen noodles to the boiling water.",
+                    "state_of_main_object": "Noodles are cooking in the boiling water."
+                },
+                {
+                    "step": "Adding Flavor Packet",
+                    "object": [
+                        [
+                            "flavor packet",
+                            "new"
+                        ],
+                        [
+                            "pot with noodles",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Stirring in the flavor packet into the pot with the noodles.",
+                    "state_of_main_object": "The flavor packet is mixed in, seasoning the noodles."
+                },
+                {
+                    "step": "Serving the Ramen",
+                    "object": [
+                        [
+                            "cooked ramen",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pouring the cooked ramen into a bowl to serve.",
+                    "state_of_main_object": "The ramen is ready to eat, served hot."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Simple Salad 29",
+            "steps": [
+                {
+                    "step": "Washing Vegetables",
+                    "object": [
+                        [
+                            "lettuce",
+                            "new"
+                        ],
+                        [
+                            "tomatoes",
+                            "new"
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Rinsing lettuce and tomatoes under cold water in the sink to clean them.",
+                    "state_of_main_object": "Vegetables are washed and clean."
+                },
+                {
+                    "step": "Chopping Vegetables",
+                    "object": [
+                        [
+                            "lettuce",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "tomatoes",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Chopping lettuce and slicing tomatoes on a cutting board.",
+                    "state_of_main_object": "Lettuce is chopped and tomatoes are sliced, ready for the salad."
+                },
+                {
+                    "step": "Assembling the Salad",
+                    "object": [
+                        [
+                            "chopped lettuce",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "sliced tomatoes",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Combining the chopped lettuce and sliced tomatoes in a salad bowl.",
+                    "state_of_main_object": "The ingredients are mixed in the bowl, creating the salad."
+                },
+                {
+                    "step": "Adding Dressing and Serving",
+                    "object": [
+                        [
+                            "salad",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "salad dressing",
+                            "new"
+                        ]
+                    ],
+                    "action": "Drizzling salad dressing over the salad and tossing to coat evenly.",
+                    "state_of_main_object": "Salad is dressed and ready to serve."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}

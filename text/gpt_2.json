@@ -1,0 +1,2857 @@
+{
+    "goals": [
+        {
+            "goal": "Decorating a Cake",
+            "steps": [
+                {
+                    "step": "Setting the Cake on a Platter",
+                    "object": [
+                        [
+                            "cake",
+                            "new"
+                        ],
+                        [
+                            "platter",
+                            "new"
+                        ]
+                    ],
+                    "action": "Set the baked cake on a platter.",
+                    "state_of_main_object": " The baked cake is positioned on a platter."
+                },
+                {
+                    "step": "Applying Icing",
+                    "object": [
+                        [
+                            "cake",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using a spoon to place some icing on the top of the cake.",
+                    "state_of_main_object": " The baked cake is on a platter, with a layer of icing on top."
+                },
+                {
+                    "step": "Adding Sprinkles and Marzipan Models",
+                    "object": [
+                        [
+                            "cake",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "sprinkles",
+                            "new"
+                        ],
+                        [
+                            "marzipan models",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person adds sprinkles, marzipan models.",
+                    "state_of_main_object": " The cake is now beautifully decorated with icing, sprinkles, and marzipan models."
+                },
+                {
+                    "step": "Placing Plastic Characters",
+                    "object": [
+                        [
+                            "cake",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "plastic characters",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person put plastic characters on top of the cake.",
+                    "state_of_main_object": " The cake on the platter is fully decorated with icing, sprinkles, marzipan models, and plastic characters."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Raspberry Puree",
+            "steps": [
+                {
+                    "step": "Combining Ingredients",
+                    "object": [
+                        [
+                            "raspberries",
+                            "new"
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ],
+                        [
+                            "lemon juice",
+                            "new"
+                        ],
+                        [
+                            "saucepan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Combine raspberries, sugar, and lemon juice in a saucepan.",
+                    "state_of_main_object": " A saucepan is filled with a combination of raspberries, sugar, and lemon juice."
+                },
+                {
+                    "step": "Cooking the Mixture",
+                    "object": [
+                        [
+                            "raspberry mixture",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "saucepan",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Heat the raspberry mixture, Stir frequently.",
+                    "state_of_main_object": " The saucepan now contains a warm, well-mixed raspberry blend."
+                },
+                {
+                    "step": "Straining the Mixture",
+                    "object": [
+                        [
+                            "raspberry mixture",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "fine mesh strainer",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour the hot raspberry mixture through a fine mesh strainer into a bowl.",
+                    "state_of_main_object": " A bowl filled with smooth raspberry puree, with the solid particles separated out using a fine mesh strainer."
+                },
+                {
+                    "step": "Refrigerating the Puree",
+                    "object": [
+                        [
+                            "raspberry puree",
+                            "similar texture",
+                            3
+                        ]
+                    ],
+                    "action": "Refrigerate the raspberry puree to allow it to thicken.",
+                    "state_of_main_object": " The bowl of raspberry puree is chilling in the refrigerator, thickening as it cools."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.3,
+                    0.1
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.3,
+                    0.1
+                ],
+                [
+                    0.3,
+                    0.3,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.1,
+                    0.1,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning a Shoe",
+            "steps": [
+                {
+                    "step": "Dusting the Shoe",
+                    "object": [
+                        [
+                            "shoe",
+                            "new"
+                        ],
+                        [
+                            "brush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a soft and dry bristle brush to dust the shoe.",
+                    "state_of_main_object": " The shoe is dust-free due to brushing with a soft, dry bristle brush."
+                },
+                {
+                    "step": "Preparing the Water",
+                    "object": [
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour cold water into a bowl.",
+                    "state_of_main_object": " The shoe is free of dust after brushing.\nState 2"
+                },
+                {
+                    "step": "Adding Detergent",
+                    "object": [
+                        [
+                            "detergent",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Add a few squirts of mild detergent to the water.",
+                    "state_of_main_object": " A bowl filled with cold water mixed with mild detergent is ready for cleaning the shoe."
+                },
+                {
+                    "step": "Cleaning the Shoe with Solution",
+                    "object": [
+                        [
+                            "shoe",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "brush",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Use the brush to apply the solution to the shoe.",
+                    "state_of_main_object": " The shoe is wet and covered with a soapy solution."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.1,
+                    0.1,
+                    0.9
+                ],
+                [
+                    0.1,
+                    1.0,
+                    0.9,
+                    0.1
+                ],
+                [
+                    0.1,
+                    0.9,
+                    1.0,
+                    0.1
+                ],
+                [
+                    0.9,
+                    0.1,
+                    0.1,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning a Glass Dish",
+            "steps": [
+                {
+                    "step": "Coating with Soap and Baking Soda",
+                    "object": [
+                        [
+                            "glass dish",
+                            "new"
+                        ],
+                        [
+                            "liquid soap",
+                            "new"
+                        ],
+                        [
+                            "baking soda",
+                            "new"
+                        ]
+                    ],
+                    "action": "Coat the bottom of the glass dish with a liquid soap and baking soda.",
+                    "state_of_main_object": " The bottom of the glass dish is covered with a mixture of liquid soap and baking soda."
+                },
+                {
+                    "step": "Filling with Hot Water",
+                    "object": [
+                        [
+                            "glass dish",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Fill the dish with hot water.",
+                    "state_of_main_object": " The glass dish is now filled with hot water, soap, and baking soda."
+                },
+                {
+                    "step": "Pouring Out Sudsy Water",
+                    "object": [
+                        [
+                            "glass dish",
+                            "similar shape",
+                            2
+                        ]
+                    ],
+                    "action": "Pour the dirty, sudsy water in the dish to sink.",
+                    "state_of_main_object": " The glass dish is now empty, with some soap and baking soda residue remaining."
+                },
+                {
+                    "step": "Scrubbing Grease Spots",
+                    "object": [
+                        [
+                            "glass dish",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "sponge",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a clean, abrasive sponge, start rubbing over the stubborn grease spots.",
+                    "state_of_main_object": " The glass dish is now wet and clean with no stubborn grease spots."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Oatmeal",
+            "steps": [
+                {
+                    "step": "Boiling Milk",
+                    "object": [
+                        [
+                            "milk",
+                            "new"
+                        ],
+                        [
+                            "saucepan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Boil milk on the stovetop.",
+                    "state_of_main_object": " A pot of milk is heated and boiling on the stove."
+                },
+                {
+                    "step": "Adding Oats",
+                    "object": [
+                        [
+                            "mixture",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "rolled oats",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add rolled oats into the milk.",
+                    "state_of_main_object": " The milk in the pot on the stove now has rolled oats added to it."
+                },
+                {
+                    "step": "Stirring the Mixture",
+                    "object": [
+                        [
+                            "mixture",
+                            "similar shape",
+                            2
+                        ]
+                    ],
+                    "action": "Stir the oats approximately every minute.",
+                    "state_of_main_object": " The milk heated on the stovetop is thickening with the stirred-in rolled oats."
+                },
+                {
+                    "step": "Removing from Heat",
+                    "object": [
+                        [
+                            "mixture",
+                            "similar texture",
+                            3
+                        ],
+                        [
+                            "saucepan",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "wooden chopping board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Remove the saucepan of oats from the heat and place it on a wooden chopping board.",
+                    "state_of_main_object": " There is a saucepan containing cooked oats on a wooden chopping board, removed from the heat source."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Growing Tomatoes",
+            "steps": [
+                {
+                    "step": "Feeding and Watering Tomato Plants",
+                    "object": [
+                        [
+                            "watering can",
+                            "new"
+                        ],
+                        [
+                            "tomato plant",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person pouring water mixed with fertilizer from a watering can onto the base of a tomato plant.",
+                    "state_of_main_object": " The base of a tomato plant is wet, having been doused with fertilizer-enriched water."
+                },
+                {
+                    "step": "Plucking Suckers from Tomato Plant",
+                    "object": [
+                        [
+                            "tomato plant",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "suckers",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person using their fingers to gently remove small suckers that appear between the branches of the tomato plant.",
+                    "state_of_main_object": " The tomato plant is well-hydrated and fertilized, with all the small suckers removed from between its branches."
+                },
+                {
+                    "step": "Harvesting Tomatoes",
+                    "object": [
+                        [
+                            "tomato plant",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "tomato",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person gently twisting the ripe tomatoes to harvest them without pulling at the vine.",
+                    "state_of_main_object": " The tomato plant is now pruned and has fewer ripe tomatoes, remaining with immature ones still on the vine."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Bathing a Dog",
+            "steps": [
+                {
+                    "step": "Wetting the Dog's Fur",
+                    "object": [
+                        [
+                            "shower head",
+                            "new"
+                        ],
+                        [
+                            "dog",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "optional"
+                        ]
+                    ],
+                    "action": "A person using a shower head to gently spray or a bowl to gently pour water onto the dog\u2019s fur.",
+                    "state_of_main_object": " The dog is standing wet with water sprayed or poured onto its fur."
+                },
+                {
+                    "step": "Applying Shampoo to the Dog's Face",
+                    "object": [
+                        [
+                            "wet cloth",
+                            "new"
+                        ],
+                        [
+                            "dog",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "A person massaging dog shampoo into the dog\u2019s facial fur using the corner of a wet cloth.",
+                    "state_of_main_object": " The dog\u2019s facial fur is lathered up with shampoo."
+                },
+                {
+                    "step": "Rinsing the Dog's Neck and Back",
+                    "object": [
+                        [
+                            "shower head",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "dog",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "bowl",
+                            "optional"
+                        ]
+                    ],
+                    "action": "A person gently pouring or spraying water down the back of the dog\u2019s neck from just below the ears and down.",
+                    "state_of_main_object": " The dog is thoroughly wet, with its fur slicked down due to the water and shampoo."
+                },
+                {
+                    "step": "Drying the Dog",
+                    "object": [
+                        [
+                            "towel",
+                            "new"
+                        ],
+                        [
+                            "dog",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "A person using a towel to dry the dog.",
+                    "state_of_main_object": " The dog is damp but mostly dry, thanks to the towel treatment."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.9,
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.8,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing Tortillas for Burritos",
+            "steps": [
+                {
+                    "step": "Placing Tortilla on Plate",
+                    "object": [
+                        [
+                            "plate",
+                            "new"
+                        ],
+                        [
+                            "tortilla",
+                            "new"
+                        ]
+                    ],
+                    "action": "A tortilla is laid flat on a clean plate.",
+                    "state_of_main_object": " There's a clean plate with a flat tortilla on it."
+                },
+                {
+                    "step": "Wrapping the Tortilla",
+                    "object": [
+                        [
+                            "plate",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "tortilla",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "A person is wrapping ingredients inside the tortilla while it lays on the plate.",
+                    "state_of_main_object": " A filled tortilla, wrapped around ingredients, sits on a clean plate."
+                },
+                {
+                    "step": "Displaying Finished Burritos",
+                    "object": [
+                        [
+                            "plate",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "burritos",
+                            "new"
+                        ]
+                    ],
+                    "action": "The plate now displays two neatly wrapped burritos.",
+                    "state_of_main_object": " Two ready-to-eat burritos are resting on the plate."
+                },
+                {
+                    "step": "Adding Cucumber",
+                    "object": [
+                        [
+                            "plate",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "cucumber",
+                            "new"
+                        ],
+                        [
+                            "burritos",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Adding some slices of cucumber next to the burritos on the plate.",
+                    "state_of_main_object": " The plate now contains two burritos alongside several slices of cucumber."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Preparing an Apple",
+            "steps": [
+                {
+                    "step": "Placing Apple on Chopping Board",
+                    "object": [
+                        [
+                            "chopping board",
+                            "new"
+                        ],
+                        [
+                            "apple",
+                            "new"
+                        ]
+                    ],
+                    "action": "An apple is placed on a chopping board.",
+                    "state_of_main_object": " The chopping board displays a single apple ready for preparation."
+                },
+                {
+                    "step": "Peeling the Apple",
+                    "object": [
+                        [
+                            "apple",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "peeler",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person uses a peeler to remove the skin from the apple.",
+                    "state_of_main_object": " The apple, now skinless, remains on the chopping board."
+                },
+                {
+                    "step": "Slicing the Apple",
+                    "object": [
+                        [
+                            "chopping board",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "apple",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person slices the peeled apple on the chopping board.",
+                    "state_of_main_object": " The chopping board now holds several slices of a peeled apple."
+                },
+                {
+                    "step": "Presenting Sliced Apples",
+                    "object": [
+                        [
+                            "plate",
+                            "new"
+                        ],
+                        [
+                            "apple slices",
+                            "new"
+                        ]
+                    ],
+                    "action": "A person holds a plate displaying the sliced apples.",
+                    "state_of_main_object": " A plate, held by a person, showcases freshly sliced apples."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Pineapple Smoothie",
+            "steps": [
+                {
+                    "step": "Placing Pineapple on Chopping Board",
+                    "object": [
+                        [
+                            "chopping board",
+                            "new"
+                        ],
+                        [
+                            "pineapple",
+                            "new"
+                        ]
+                    ],
+                    "action": "A pineapple is placed on a chopping board.",
+                    "state_of_main_object": " A whole pineapple sits on the chopping board."
+                },
+                {
+                    "step": "Peeling the Pineapple",
+                    "object": [
+                        [
+                            "chopping board",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "pineapple",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "The whole pineapple on the chopping board is now peeled.",
+                    "state_of_main_object": " The chopping board now holds a peeled pineapple."
+                },
+                {
+                    "step": "Adding Pineapple to Blender",
+                    "object": [
+                        [
+                            "blender",
+                            "new"
+                        ],
+                        [
+                            "pineapple pieces",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pieces of the peeled pineapple are placed in a blender.",
+                    "state_of_main_object": " A blender is filled with chunks of peeled pineapple."
+                },
+                {
+                    "step": "Pineapple Smoothie in Glass",
+                    "object": [
+                        [
+                            "glass",
+                            "new"
+                        ],
+                        [
+                            "pineapple smoothie",
+                            "new"
+                        ]
+                    ],
+                    "action": "The blended pineapple smoothie is poured into a glass.",
+                    "state_of_main_object": " A glass sits filled with pineapple smoothie that was blended in a blender."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cutting Carrots and Onions for Cooking",
+            "steps": [
+                {
+                    "step": "Cutting Carrots on Chopping Board",
+                    "object": [
+                        [
+                            "chopping board",
+                            "new"
+                        ],
+                        [
+                            "carrots",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Carrots are being cut into slices on a chopping board.",
+                    "state_of_main_object": " Sliced carrots are spread on the chopping board."
+                },
+                {
+                    "step": "Adding Cut Carrots to Pot",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "carrot slices",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "The slices of carrots are put into a cooking pot.",
+                    "state_of_main_object": " A cooking pot is filled with sliced carrots."
+                },
+                {
+                    "step": "Cutting Onions on Chopping Board",
+                    "object": [
+                        [
+                            "chopping board",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "onions",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Onions are being cut into pieces on the same chopping board.",
+                    "state_of_main_object": " The chopping board now contains pieces of cut onions, while the cooking pot holds slices of carrots."
+                },
+                {
+                    "step": "Adding Cut Onions to Pot with Carrots",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "onion pieces",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "carrot slices",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Pieces of cut onions are added to the pot containing the carrot slices.",
+                    "state_of_main_object": " The cooking pot now contains both slices of carrots and pieces of onions."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.9
+                ],
+                [
+                    0.9,
+                    0.7,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.7,
+                    0.9,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cooking Wings",
+            "steps": [
+                {
+                    "step": "Placing Wings in Oven",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ],
+                        [
+                            "wings",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the wings into the oven for 1 hour.",
+                    "state_of_main_object": " The wings are in the oven, baking for an hour."
+                },
+                {
+                    "step": "Mixing Grilled Wings with Ingredients",
+                    "object": [
+                        [
+                            "bowl",
+                            "new"
+                        ],
+                        [
+                            "grilled wings",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "soup base powder",
+                            "new"
+                        ],
+                        [
+                            "milk",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix grilled wings with soup base powder, milk, and water in a bowl.",
+                    "state_of_main_object": " In a bowl, there are grilled wings mixed with soup base powder, milk, and water."
+                },
+                {
+                    "step": "Returning Wings with Mixture to Oven",
+                    "object": [
+                        [
+                            "oven",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "wing mixture",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Place the bowl of wings and powder mix back into the oven.",
+                    "state_of_main_object": " The oven contains a bowl filled with wings, soup base powder, milk, and water for further cooking."
+                },
+                {
+                    "step": "Final Cooking of Wings",
+                    "object": [
+                        [
+                            "oven",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Leave the wings in the oven until they turn brown and tender.",
+                    "state_of_main_object": " The bowl from the oven now contains brown, tender wings fully cooked and flavored with the powder mix."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.8,
+                    0.9
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.9,
+                    0.7,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Tofu Burgers",
+            "steps": [
+                {
+                    "step": "Draining and Pressing Tofu",
+                    "object": [
+                        [
+                            "tofu",
+                            "new"
+                        ],
+                        [
+                            "towel",
+                            "new"
+                        ],
+                        [
+                            "weight",
+                            "new"
+                        ]
+                    ],
+                    "action": "Drain and press tofu to remove excess water using a towel and a weight.",
+                    "state_of_main_object": " The tofu is now compressed and devoid of excess water, resting beneath a weight."
+                },
+                {
+                    "step": "Mixing Tofu with Ingredients",
+                    "object": [
+                        [
+                            "tofu",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "bread crumbs",
+                            "new"
+                        ],
+                        [
+                            "binding agent",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix the pressed tofu with bread crumbs and a binding agent in a bowl.",
+                    "state_of_main_object": " A mixture of pressed tofu, breadcrumbs, and a binding agent is in the bowl, ready for further preparation."
+                },
+                {
+                    "step": "Shaping Tofu into Patties",
+                    "object": [
+                        [
+                            "tofu mixture",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "patties",
+                            "new"
+                        ]
+                    ],
+                    "action": "Shape the tofu mixture into burger patties.",
+                    "state_of_main_object": " Several tofu burger patties are formed and ready to be cooked."
+                },
+                {
+                    "step": "Cooking Tofu Patties",
+                    "object": [
+                        [
+                            "patties",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "pan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cook the tofu patties over medium heat in a pan until golden brown.",
+                    "state_of_main_object": " The pan now contains golden brown tofu burger patties, perfectly cooked."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.7,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Bread",
+            "steps": [
+                {
+                    "step": "Dissolving Salt in Water",
+                    "object": [
+                        [
+                            "salt",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Dissolve the salt in a small amount of warm water in a bowl.",
+                    "state_of_main_object": " A bowl containing a mixture of warm water and dissolved salt."
+                },
+                {
+                    "step": "Flattening the Dough",
+                    "object": [
+                        [
+                            "dough",
+                            "new"
+                        ]
+                    ],
+                    "action": "Flatten the dough into a rectangle on a flat surface.",
+                    "state_of_main_object": " A flattened rectangle of dough lays on a flat surface."
+                },
+                {
+                    "step": "Spreading Salt Water Over Dough",
+                    "object": [
+                        [
+                            "dough",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "salt water",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Spread the salt water evenly over the flattened dough.",
+                    "state_of_main_object": " There is a rectangle of dough on a flat surface, evenly sprinkled with salt water."
+                },
+                {
+                    "step": "Folding and Kneading the Dough",
+                    "object": [
+                        [
+                            "dough",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Fold and knead the dough to evenly distribute the salt water throughout.",
+                    "state_of_main_object": " The dough, with salt water thoroughly kneaded into it, lies shaped on a flat surface.\n"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.8,
+                    0.7
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Sweet Potato Pecan Dish",
+            "steps": [
+                {
+                    "step": "Mixing Sweet Potatoes and Milk",
+                    "object": [
+                        [
+                            "sweet potatoes",
+                            "new"
+                        ],
+                        [
+                            "milk",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix boiled sweet potatoes with milk in a bowl.",
+                    "state_of_main_object": " A bowl filled with a mixture of boiled sweet potatoes and milk."
+                },
+                {
+                    "step": "Adding Sugar and Mashing",
+                    "object": [
+                        [
+                            "sweet potato mixture",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix in sugar to the sweet potatoes and mash the mixture.",
+                    "state_of_main_object": " The bowl contains a sweet, mashed mixture of sweet potatoes, milk, and sugar."
+                },
+                {
+                    "step": "Combining Brown Sugar and Pecans",
+                    "object": [
+                        [
+                            "brown sugar",
+                            "new"
+                        ],
+                        [
+                            "pecans",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Combine brown sugar and chopped pecans in a separate bowl.",
+                    "state_of_main_object": " The scene now includes two bowls"
+                },
+                {
+                    "step": "Baking the Mixture",
+                    "object": [
+                        [
+                            "sweet potato mixture",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "pecan mixture",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "baking dish",
+                            "new"
+                        ]
+                    ],
+                    "action": "Spread the sweet potato mixture into a baking dish, then top with the brown sugar and pecan mixture. Bake for 25-30 minutes.",
+                    "state_of_main_object": " A baking dish contains a layer of mashed sweet potato topped with a mixture of brown sugar and chopped pecans. It's then baked until golden and slightly bubbly."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.9,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.7,
+                    0.8
+                ],
+                [
+                    0.7,
+                    0.7,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Fried Colored Snack Balls",
+            "steps": [
+                {
+                    "step": "Mixing Dry Ingredients",
+                    "object": [
+                        [
+                            "flour",
+                            "new"
+                        ],
+                        [
+                            "dry ingredients",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix dry ingredients including flour in a bowl.",
+                    "state_of_main_object": " A bowl filled with mixed dry ingredients, including flour, is ready."
+                },
+                {
+                    "step": "Adding Food Coloring to Wet Ingredients",
+                    "object": [
+                        [
+                            "food coloring",
+                            "new"
+                        ],
+                        [
+                            "wet ingredients",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add green food coloring to wet ingredients and mix thoroughly in a bowl.",
+                    "state_of_main_object": " The wet ingredients, now a vibrant green color, are combined in a bowl."
+                },
+                {
+                    "step": "Forming Batter into Balls",
+                    "object": [
+                        [
+                            "batter",
+                            "new"
+                        ]
+                    ],
+                    "action": "Form the batter into small balls using hands or a scoop.",
+                    "state_of_main_object": " Small, green-tinted batter balls are prepared and ready for frying."
+                },
+                {
+                    "step": "Deep Frying Batter Balls",
+                    "object": [
+                        [
+                            "batter balls",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "oil",
+                            "new"
+                        ],
+                        [
+                            "frying pan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Deep fry the batter balls in hot oil until cooked through.",
+                    "state_of_main_object": " Fried, green-colored snack balls are ready, having been thoroughly cooked in hot oil."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.7,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Tomato Soup",
+            "steps": [
+                {
+                    "step": "Chopping Tomatoes",
+                    "object": [
+                        [
+                            "tomato",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Chop fresh tomatoes into quarters on a cutting board.",
+                    "state_of_main_object": " The cutting board holds freshly chopped tomato quarters, ready to be used."
+                },
+                {
+                    "step": "Cooking Tomatoes",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "chopped tomatoes",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place chopped tomatoes into a pot and add water or broth.",
+                    "state_of_main_object": " A pot filled with water or broth and chopped tomatoes, preparing to be cooked."
+                },
+                {
+                    "step": "Simmering Soup",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Simmer the tomatoes until soft and blend with a hand blender until smooth.",
+                    "state_of_main_object": " The pot contains a smooth tomato soup, created from simmered and blended tomatoes."
+                },
+                {
+                    "step": "Seasoning Soup",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "seasonings",
+                            "new"
+                        ]
+                    ],
+                    "action": "Season the soup with salt, pepper, and herbs to taste, then serve hot.",
+                    "state_of_main_object": " A steaming, hot tomato soup, seasoned with salt, pepper, and herbs, is ready to serve."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.7,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Potato Soup",
+            "steps": [
+                {
+                    "step": "Peeling and Chopping Potatoes",
+                    "object": [
+                        [
+                            "potato",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "peeler",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Peel potatoes and chop them into small cubes on a cutting board.",
+                    "state_of_main_object": " The cutting board now holds small cubed pieces of peeled potatoes."
+                },
+                {
+                    "step": "Cooking Potatoes",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "chopped potatoes",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place chopped potatoes into a pot, add water or broth, and bring to a boil.",
+                    "state_of_main_object": " A pot containing diced potatoes and boiling broth or water sits on the stove."
+                },
+                {
+                    "step": "Adding Cream and Seasonings",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "cream",
+                            "new"
+                        ],
+                        [
+                            "seasonings",
+                            "new"
+                        ]
+                    ],
+                    "action": "Reduce heat and add cream and seasonings like salt and pepper.",
+                    "state_of_main_object": " The pot contains a creamy potato soup that is seasoned and simmering on a low heat."
+                },
+                {
+                    "step": "Serving",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Serve the creamy potato soup hot, garnished with chopped green onions or chives.",
+                    "state_of_main_object": " The ready-to-eat creamy potato soup, hot and garnished with green onions or chives, is served in bowls on the table."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.0,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Porridge",
+            "steps": [
+                {
+                    "step": "Measuring Porridge Oats",
+                    "object": [
+                        [
+                            "oats",
+                            "new"
+                        ],
+                        [
+                            "measuring cup",
+                            "new"
+                        ]
+                    ],
+                    "action": "Measure out oats using a measuring cup.",
+                    "state_of_main_object": " A measuring cup filled with a specific quantity of oats is ready."
+                },
+                {
+                    "step": "Cooking Oats",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "measured oats",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add oats and water to a pot, bring to a boil.",
+                    "state_of_main_object": " A pot filled with a mixture of oats and water is boiling on the stove."
+                },
+                {
+                    "step": "Simmering Porridge",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Simmer the oats on low heat, stirring frequently until thickened.",
+                    "state_of_main_object": " A pot filled with thickened oat porridge is simmering on low heat."
+                },
+                {
+                    "step": "Adding Flavors and Toppings",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "flavors",
+                            "new"
+                        ],
+                        [
+                            "toppings",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add sugar, salt, or honey for flavor and garnish with toppings like fruits or nuts.",
+                    "state_of_main_object": " The pot now contains perfectly cooked porridge with added flavorings and garnished with fruits or nuts.\n"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.7
+                ],
+                [
+                    0.7,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Pumpkin Soup",
+            "steps": [
+                {
+                    "step": "Preparing Pumpkin",
+                    "object": [
+                        [
+                            "pumpkin",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Peel and chop the pumpkin into cubes on a cutting board.",
+                    "state_of_main_object": " There is a cutting board with peeled and cubed pumpkin."
+                },
+                {
+                    "step": "Cooking Pumpkin",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "pumpkin cubes",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place pumpkin cubes in a pot with broth, bring to a boil and simmer until soft.",
+                    "state_of_main_object": " A pot containing softly boiled pumpkin cubes in broth sits on the stove."
+                },
+                {
+                    "step": "Blending Soup",
+                    "object": [
+                        [
+                            "blender",
+                            "new"
+                        ],
+                        [
+                            "cooked pumpkin",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Blend the softened pumpkin with some of the cooking liquid until smooth.",
+                    "state_of_main_object": " The pot now contains a smooth pumpkin soup."
+                },
+                {
+                    "step": "Seasoning and Serving",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Return the blended pumpkin to the pot, season with salt, pepper, and cream, then heat through.",
+                    "state_of_main_object": " There's a pot containing creamy, seasoned pumpkin soup that's ready to be served."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.7,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.6,
+                    0.9,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Fried Rice",
+            "steps": [
+                {
+                    "step": "Preparing Ingredients",
+                    "object": [
+                        [
+                            "rice",
+                            "new"
+                        ],
+                        [
+                            "vegetables",
+                            "new"
+                        ],
+                        [
+                            "eggs",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Chop vegetables and set aside; beat eggs lightly.",
+                    "state_of_main_object": " The scene features chopped vegetables and lightly beaten eggs ready for cooking."
+                },
+                {
+                    "step": "Cooking Eggs",
+                    "object": [
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "eggs",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Scramble the eggs in a heated pan, then remove and set aside.",
+                    "state_of_main_object": " A pan is now empty, with the scrambled eggs set aside separately."
+                },
+                {
+                    "step": "Stir-Frying Rice",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "rice",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "vegetables",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Stir-fry rice and vegetables in the same pan, adding oil as needed.",
+                    "state_of_main_object": " A pan contains stir-fried rice mixed with vegetables, being cooked with added oil."
+                },
+                {
+                    "step": "Combining Ingredients",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "cooked eggs",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "soy sauce",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add the scrambled eggs back to the pan with rice and vegetables, drizzle soy sauce, and mix well.",
+                    "state_of_main_object": " The pan has evenly mixed fried rice, vegetables, scrambled eggs, and soy sauce.\n"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.8
+                ],
+                [
+                    0.7,
+                    0.6,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Curried Sausages",
+            "steps": [
+                {
+                    "step": "Browning the Sausages",
+                    "object": [
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "sausages",
+                            "new"
+                        ]
+                    ],
+                    "action": "Brown the sausages in a pan until they are golden on all sides.",
+                    "state_of_main_object": " Golden brown sausages are sitting in a pan."
+                },
+                {
+                    "step": "Adding Vegetables",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "vegetables",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add chopped onions and other vegetables to the pan and saut\u00e9 until soft.",
+                    "state_of_main_object": " The pan contains browned sausages along with saut\u00e9ed onions and other softened vegetables."
+                },
+                {
+                    "step": "Mixing in Curry Sauce",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "curry powder",
+                            "new"
+                        ],
+                        [
+                            "tomato paste",
+                            "new"
+                        ]
+                    ],
+                    "action": "Stir in curry powder and tomato paste, then add water to create a curry sauce.",
+                    "state_of_main_object": " The pan now contains sausages and soft vegetables coated in a simmering curry sauce."
+                },
+                {
+                    "step": "Simmering",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Let the curry simmer until the sauce thickens and the flavors meld together.",
+                    "state_of_main_object": " The pan now holds Curried Sausages, with the curry sauce thickened and flavors well combined."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.8
+                ],
+                [
+                    0.7,
+                    0.9,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.6,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Thai Beef Salad",
+            "steps": [
+                {
+                    "step": "Grilling the Beef",
+                    "object": [
+                        [
+                            "grill",
+                            "new"
+                        ],
+                        [
+                            "beef",
+                            "new"
+                        ]
+                    ],
+                    "action": "Grill the beef until it's cooked to your preferred doneness, then let it rest.",
+                    "state_of_main_object": " There is grilled beef resting after being cooked to a preferred level of doneness."
+                },
+                {
+                    "step": "Preparing Salad Mix",
+                    "object": [
+                        [
+                            "bowl",
+                            "new"
+                        ],
+                        [
+                            "vegetables",
+                            "new"
+                        ],
+                        [
+                            "herbs",
+                            "new"
+                        ]
+                    ],
+                    "action": "In a large bowl, mix together sliced vegetables like cucumbers and tomatoes, and fresh herbs like mint and cilantro.",
+                    "state_of_main_object": " A large bowl contains a mix of sliced cucumbers, tomatoes, mint, and cilantro."
+                },
+                {
+                    "step": "Slicing the Beef",
+                    "object": [
+                        [
+                            "cutting board",
+                            "new"
+                        ],
+                        [
+                            "grilled beef",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Slice the rested beef thinly against the grain on a cutting board.",
+                    "state_of_main_object": " Thinly sliced, rested beef is laying on a cutting board, with a mixture of sliced vegetables and herbs in a large bowl next to it."
+                },
+                {
+                    "step": "Combining Beef and Salad",
+                    "object": [
+                        [
+                            "bowl",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "sliced beef",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Add the sliced beef to the salad and toss with Thai dressing.",
+                    "state_of_main_object": " The large bowl now contains a Thai beef salad - grilled beef slices mixed with cucumbers and tomatoes, fresh herbs, and dressed with Thai dressing.\n"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.9
+                ],
+                [
+                    0.7,
+                    0.6,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.6,
+                    0.9,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Lasagne",
+            "steps": [
+                {
+                    "step": "Preparing the Meat Sauce",
+                    "object": [
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "ground beef",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cook ground beef in a pan, add onions and garlic, then pour in tomato sauce.",
+                    "state_of_main_object": " A pan is filled with cooked ground beef, onions, garlic, and tomato sauce."
+                },
+                {
+                    "step": "Assembling the Lasagne",
+                    "object": [
+                        [
+                            "baking dish",
+                            "new"
+                        ],
+                        [
+                            "meat sauce",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "lasagne noodles",
+                            "new"
+                        ],
+                        [
+                            "cheese",
+                            "new"
+                        ]
+                    ],
+                    "action": "Layer lasagne noodles, meat sauce, and cheese in a baking dish.",
+                    "state_of_main_object": " A baking dish is filled with layers of lasagne noodles, meat sauce, and cheese."
+                },
+                {
+                    "step": "Baking the Lasagne",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ],
+                        [
+                            "lasagne",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Bake in a preheated oven until the cheese is bubbly and browned.",
+                    "state_of_main_object": " A lasagne is sitting in a baking dish with a bubbly and browned cheese on the top, fresh out from the oven."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.5,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Classic Shepherd's Pie",
+            "steps": [
+                {
+                    "step": "Cooking the Meat",
+                    "object": [
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "ground lamb",
+                            "new"
+                        ]
+                    ],
+                    "action": "Brown the ground lamb in a pan, then drain excess fat.",
+                    "state_of_main_object": " A pan contains browned ground lamb, with excess fat removed."
+                },
+                {
+                    "step": "Preparing the Vegetable Mix",
+                    "object": [
+                        [
+                            "pan",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "vegetables",
+                            "new"
+                        ],
+                        [
+                            "tomato paste",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add chopped vegetables and tomato paste to the pan, cook until soft.",
+                    "state_of_main_object": " The pan contains ground lamb mixed with soft cooked vegetables and tomato paste."
+                },
+                {
+                    "step": "Assembling the Pie",
+                    "object": [
+                        [
+                            "baking dish",
+                            "new"
+                        ],
+                        [
+                            "meat mixture",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "mashed potatoes",
+                            "new"
+                        ]
+                    ],
+                    "action": "Layer the meat mixture in a baking dish, then top with mashed potatoes.",
+                    "state_of_main_object": " A baking dish is filled with a bottom layer of cooked meat and vegetables, topped by a layer of mashed potatoes."
+                },
+                {
+                    "step": "Baking the Pie",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ],
+                        [
+                            "shepherd's pie",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Bake in a preheated oven until the top is golden and crispy.",
+                    "state_of_main_object": " A freshly baked Shepherd's Pie exuding a tantalizing aroma, with a golden crispy mashed potato topping sits in the oven."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Tomato Facial Mask",
+            "steps": [
+                {
+                    "step": "Preparing the Tomato",
+                    "object": [
+                        [
+                            "tomato",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wash the tomato thoroughly under running water. Then, cut it in half using a knife on a cutting board.",
+                    "state_of_main_object": " The cutting board holds a cleanly sliced tomato, washed and ready for use."
+                },
+                {
+                    "step": "Extracting Tomato Juice",
+                    "object": [
+                        [
+                            "tomato half",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Squeeze or mash the tomato half over a bowl to extract the juice.",
+                    "state_of_main_object": " A bowl filled with fresh tomato juice sits on a table, nearby are the remnants of a squeezed tomato."
+                },
+                {
+                    "step": "Adding Additional Ingredients",
+                    "object": [
+                        [
+                            "bowl with tomato juice",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "honey",
+                            "new"
+                        ],
+                        [
+                            "yogurt",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix one tablespoon of honey and one tablespoon of yogurt into the tomato juice to form a paste.",
+                    "state_of_main_object": " A bowl contains a paste made from tomato juice, honey, and yogurt, ready to be used as a facial mask."
+                },
+                {
+                    "step": "Applying the Mask",
+                    "object": [
+                        [
+                            "facial mask mixture",
+                            "similar",
+                            3
+                        ]
+                    ],
+                    "action": "Apply the mask evenly over your clean face using your fingertips or a mask brush, avoiding the eye area.",
+                    "state_of_main_object": " The face is covered evenly with the tomato, honey, and yogurt mask, except for the eye area."
+                },
+                {
+                    "step": "Rinsing Off the Mask",
+                    "object": [
+                        [
+                            "washcloth",
+                            "new"
+                        ],
+                        [
+                            "warm water",
+                            "new"
+                        ]
+                    ],
+                    "action": "After leaving the mask on for about 15-20 minutes, rinse it off using warm water and a soft washcloth.",
+                    "state_of_main_object": " Your face is clean, rejuvenated, and free of the tomato mask, left feeling fresh and glowing after the rinse."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.7,
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.5,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.3,
+                    0.4,
+                    0.5,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Yogurt Facial Mask",
+            "steps": [
+                {
+                    "step": "Preparing the Yogurt",
+                    "object": [
+                        [
+                            "yogurt",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Spoon plain, unsweetened yogurt into a clean bowl.",
+                    "state_of_main_object": "The bowl contains plain yogurt."
+                },
+                {
+                    "step": "Adding Honey",
+                    "object": [
+                        [
+                            "yogurt in bowl",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "honey",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add one tablespoon of honey to the yogurt and mix well.",
+                    "state_of_main_object": "The yogurt is mixed with honey, becoming a cohesive mixture."
+                },
+                {
+                    "step": "Applying the Mask",
+                    "object": [
+                        [
+                            "yogurt mixture",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Apply the yogurt and honey mixture evenly over your clean face using your fingertips or a brush, avoiding the eye area.",
+                    "state_of_main_object": "The face is covered evenly with the yogurt facial mask."
+                },
+                {
+                    "step": "Rinsing Off the Mask",
+                    "object": [
+                        [
+                            "washcloth",
+                            "new"
+                        ],
+                        [
+                            "warm water",
+                            "new"
+                        ]
+                    ],
+                    "action": "After leaving the mask on for about 10-15 minutes, rinse it off using warm water and a soft washcloth.",
+                    "state_of_main_object": "The skin is clean and may appear more hydrated and smooth."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.5
+                ],
+                [
+                    0.5,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Building a Wooden Picket Fence for a Small Garden",
+            "steps": [
+                {
+                    "step": "Gathering Materials",
+                    "object": [
+                        [
+                            "wooden posts",
+                            "new"
+                        ],
+                        [
+                            "pickets",
+                            "new"
+                        ],
+                        [
+                            "nails",
+                            "new"
+                        ],
+                        [
+                            "hammer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collect all necessary materials including wooden posts, pickets, nails, and a hammer.",
+                    "state_of_main_object": "Materials are collected and ready for use."
+                },
+                {
+                    "step": "Setting the Posts",
+                    "object": [
+                        [
+                            "wooden posts",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "shovel",
+                            "new"
+                        ],
+                        [
+                            "level",
+                            "new"
+                        ]
+                    ],
+                    "action": "Dig holes for the posts using a shovel, place the posts, and ensure they are level and stable.",
+                    "state_of_main_object": "Posts are installed in the ground and aligned vertically."
+                },
+                {
+                    "step": "Attaching the Pickets",
+                    "object": [
+                        [
+                            "pickets",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "wooden posts",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "hammer",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "nails",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Attach the pickets to the posts using nails and a hammer, spacing them evenly.",
+                    "state_of_main_object": "Pickets are nailed to the posts, forming the fence."
+                },
+                {
+                    "step": "Finishing Touches",
+                    "object": [
+                        [
+                            "fence",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "paint",
+                            "new"
+                        ],
+                        [
+                            "paintbrush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Apply a coat of paint or wood preserver to the fence to protect it from the elements.",
+                    "state_of_main_object": "The fence is painted and finished, providing a neat appearance and protection."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.5,
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Cat Sleeping Box",
+            "steps": [
+                {
+                    "step": "Choosing the Box",
+                    "object": [
+                        [
+                            "box",
+                            "new"
+                        ]
+                    ],
+                    "action": "Select a sturdy cardboard box that is large enough for your cat to comfortably lie down in.",
+                    "state_of_main_object": "The box is empty and ready for modification."
+                },
+                {
+                    "step": "Preparing the Box",
+                    "object": [
+                        [
+                            "box",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "scissors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cut a doorway in one side of the box large enough for your cat to enter and exit easily using scissors.",
+                    "state_of_main_object": "The box now has an entry point cut into it."
+                },
+                {
+                    "step": "Adding Comfort",
+                    "object": [
+                        [
+                            "box",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "soft bedding",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place soft bedding, such as a blanket or a soft towel, inside the box to make it comfortable.",
+                    "state_of_main_object": "The box is lined with soft bedding, making it cozy."
+                },
+                {
+                    "step": "Personalizing the Box",
+                    "object": [
+                        [
+                            "box",
+                            "similar",
+                            3
+                        ],
+                        [
+                            "non-toxic paint",
+                            "new"
+                        ],
+                        [
+                            "paintbrush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Decorate the outside of the box with non-toxic paint to personalize it for your cat.",
+                    "state_of_main_object": "The box is decorated and personalized."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.5
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.6,
+                    0.7,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.5,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}

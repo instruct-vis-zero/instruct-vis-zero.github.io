@@ -1,0 +1,31 @@
+html, body {
+overflow-x: hidden;
+max-width: 100%;
+}
+  
+body {
+    /* font-family: 'Google Sans', sans-serif; */
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    margin: 2rem;
+    text-align: center;
+}
+
+.baseline {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.step {
+    font-style: italic;
+}
+
+.state {
+    font-style: italic;
+    color:chocolate;
+}
+
+.section-title {
+    color: red;
+    padding-bottom: 3rem;
+}

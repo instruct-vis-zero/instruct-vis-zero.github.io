@@ -1,0 +1,5470 @@
+{
+    "goals": [
+        {
+            "goal": "Baking an Avocado",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "avocado",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cut an avocado in half and remove the seed with the knife.",
+                    "state_of_main_object": " There are two halved avocados with the seed removed laying on the cutting board."
+                },
+                {
+                    "step": "Preheat the Oven",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ]
+                    ],
+                    "action": "Preheat your oven to 200 degrees Celsius.",
+                    "state_of_main_object": " An avocado is halved with the seed removed.\n\nstate 2"
+                },
+                {
+                    "step": "Placing Avocado",
+                    "object": [
+                        [
+                            "avocado",
+                            "total similar",
+                            1
+                        ],
+                        [
+                            "baking tray",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the halved avocado onto a baking tray.",
+                    "state_of_main_object": " The halved avocado is now ready for baking on the tray, while the oven is heating."
+                },
+                {
+                    "step": "Baking",
+                    "object": [
+                        [
+                            "avocado",
+                            "total similar",
+                            2
+                        ],
+                        [
+                            "oven",
+                            "total similar",
+                            1
+                        ]
+                    ],
+                    "action": "Put the tray in the oven and bake for 15 minutes.",
+                    "state_of_main_object": " The baking tray, with the two avocado halves, is inside the preheated oven, baking."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Boiling Carrots",
+            "steps": [
+                {
+                    "step": "Prepare the Carrots",
+                    "object": [
+                        [
+                            "carrots",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Clean carrots and use a knife to peel and cut them into smaller pieces.",
+                    "state_of_main_object": " The scene is a cutting board with clean, peeled, and cut pieces of carrots."
+                },
+                {
+                    "step": "Add Carrots to Pot",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "carrots",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Place the prepared carrots into the pot.",
+                    "state_of_main_object": " A pot containing prepared, cut-up carrots."
+                },
+                {
+                    "step": "Pour Water",
+                    "object": [
+                        [
+                            "pot",
+                            "similar total",
+                            2
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour water into the pot, ensuring the water level is above the carrots.",
+                    "state_of_main_object": " The pot is now filled with water and prepared carrots, ready to be boiled."
+                },
+                {
+                    "step": "Boil the Carrots",
+                    "object": [
+                        [
+                            "pot",
+                            "similar total",
+                            3
+                        ],
+                        [
+                            "stove",
+                            "new"
+                        ]
+                    ],
+                    "action": "Put the pot on the stove and turn it on to high heat. Let the water come to a boil.",
+                    "state_of_main_object": " The pot, containing carrots submerged in boiling water, is on the high heat on the stove."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.2,
+                    0.7,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.1,
+                    0.4,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Boiling Beets",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "beets",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wash the beets thoroughly to remove any dirt.",
+                    "state_of_main_object": " The beets are clean and free from any dirt."
+                },
+                {
+                    "step": "Pot Preparation",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "beets",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "water",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place the clean beets into a pot. Fill the pot with water until the beets are fully submerged.",
+                    "state_of_main_object": " The pot is filled with water and clean beets, with the beets completely submerged."
+                },
+                {
+                    "step": "Boiling Process",
+                    "object": [
+                        [
+                            "pot",
+                            "similar",
+                            2
+                        ],
+                        [
+                            "stove",
+                            "new"
+                        ]
+                    ],
+                    "action": "Turn on the stove and put the pot over it for boiling.",
+                    "state_of_main_object": " On the stove, there is a pot filled with water and submerged beets, now being boiled."
+                },
+                {
+                    "step": "Boiling Completion",
+                    "object": [
+                        [
+                            "beets",
+                            "similar",
+                            1
+                        ],
+                        [
+                            "stove",
+                            "similar texture",
+                            1
+                        ]
+                    ],
+                    "action": "Boil the beets until they are tender, then turn off the stove.",
+                    "state_of_main_object": " The pot on the stove contains boiled, tender beets, and the stove is turned off."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.1
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.6,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Boil Cabbage",
+            "steps": [
+                {
+                    "step": "Preparation Stage",
+                    "object": [
+                        [
+                            "cabbage",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ]
+                    ],
+                    "action": "Rinse the cabbage and place it on the cutting board. Slice the cabbage into quarters.",
+                    "state_of_main_object": " Quarters of rinsed cabbage are on the cutting board."
+                },
+                {
+                    "step": "Heating Pot with Water",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill the pot with water and place it on the stove. Turn on the heat to high until the water boils.",
+                    "state_of_main_object": " There is a pot filled with boiling water on the hot stove."
+                },
+                {
+                    "step": "Adding Cabbage",
+                    "object": [
+                        [
+                            "cabbage",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "pot",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Add the chopped cabbage into the boiling water.",
+                    "state_of_main_object": " The pot on the stove now contains boiling water with chopped cabbage inside."
+                },
+                {
+                    "step": "Boiling Cabbage",
+                    "object": [
+                        [
+                            "cabbage",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "pot",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Let the cabbage boil for about 5-10 minutes until it's tender.",
+                    "state_of_main_object": " Tender, boiled cabbage quarters sit inside the pot of boiling water."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.2,
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.5,
+                    0.2
+                ],
+                [
+                    0.4,
+                    0.5,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.2,
+                    0.5,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning a Mango",
+            "steps": [
+                {
+                    "step": "Water Availability",
+                    "object": [
+                        [
+                            "tap",
+                            "new"
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ]
+                    ],
+                    "action": "Open the tap to ensure water is flowing in the sink.",
+                    "state_of_main_object": " The sink is prepared with running water."
+                },
+                {
+                    "step": "Washing the Mango",
+                    "object": [
+                        [
+                            "mango",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Place the mango under the running water.",
+                    "state_of_main_object": " The mango is positioned under a flowing tap, being rinsed with water."
+                },
+                {
+                    "step": "Scrubbing the Mango",
+                    "object": [
+                        [
+                            "mango",
+                            "similar total",
+                            2
+                        ],
+                        [
+                            "brush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gently scrub the mango surface with the help of a soft brush.",
+                    "state_of_main_object": " The mango, now sitting under flowing water, is being gently scrubbed with a soft brush."
+                },
+                {
+                    "step": "Drying the Mango",
+                    "object": [
+                        [
+                            "mango",
+                            "similar total",
+                            3
+                        ],
+                        [
+                            "cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Dry the mango by patting it with a clean cloth.",
+                    "state_of_main_object": " The mango is clean, dry, and ready for consumption or use in a recipe."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.4,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.3,
+                    0.4,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.4,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Clean Green Beans",
+            "steps": [
+                {
+                    "step": "Gather the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "new"
+                        ]
+                    ],
+                    "action": "Get the green beans from the refrigerator or market.",
+                    "state_of_main_object": " The green beans are now out, readily available either from the refrigerator or the market.\n"
+                },
+                {
+                    "step": "Rinse under Water",
+                    "object": [
+                        [
+                            "beans",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ]
+                    ],
+                    "action": "Turn on the tap and rinse the beans under running water.",
+                    "state_of_main_object": " The green beans are now clean and wet under the running water."
+                },
+                {
+                    "step": "Trim the Ends",
+                    "object": [
+                        [
+                            "beans",
+                            "similar total",
+                            2
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a sharp knife to trim the ends of each bean.",
+                    "state_of_main_object": " All the green beans are cleaned, with their ends neatly trimmed."
+                },
+                {
+                    "step": "Dry the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "similar total",
+                            3
+                        ],
+                        [
+                            "towel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pat dry the beans with a clean towel.",
+                    "state_of_main_object": " The green beans are clean, trimmed at the ends, and dried."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.1
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.7,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Boiling Baby Corn",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "baby corn",
+                            "new"
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Rinse the baby corn under water in the sink.",
+                    "state_of_main_object": " The baby corn is now clean and ready to be cooked, sitting in the kitchen sink."
+                },
+                {
+                    "step": "Heating Water",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "stove",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "similar (total)",
+                            1
+                        ]
+                    ],
+                    "action": "Fill the pot with water and place it on the stove.",
+                    "state_of_main_object": " The kitchen sink contains rinsed baby corn. \nstate 2"
+                },
+                {
+                    "step": "Adding Baby Corn",
+                    "object": [
+                        [
+                            "baby corn",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "pot",
+                            "similar (total)",
+                            2
+                        ]
+                    ],
+                    "action": "Put the rinsed baby corn into the pot of water.",
+                    "state_of_main_object": " The pot on the stove is filled with water and rinsed baby corns."
+                },
+                {
+                    "step": "Boiling",
+                    "object": [
+                        [
+                            "baby corn",
+                            "similar texture",
+                            3
+                        ],
+                        [
+                            "pot",
+                            "similar (total)",
+                            4
+                        ]
+                    ],
+                    "action": "Turn on the stove and let the water with the corn boil for about 5-7 minutes.",
+                    "state_of_main_object": " The pot on the stove now contains boiled baby corn in hot water."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.4,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.4,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.2,
+                    0.6,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.1,
+                    0.3,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cooking Beans",
+            "steps": [
+                {
+                    "step": "Rinsing the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "colander",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person starts by pouring the beans into a colander and then rinses them thoroughly under cold running water.",
+                    "state_of_main_object": " A colander full of washed beans stands under running water."
+                },
+                {
+                    "step": "Soaking the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "shape similar",
+                            1
+                        ],
+                        [
+                            "water",
+                            "total similar",
+                            1
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Next, move the cleaned beans to a large bowl, add enough water to cover the beans by at least two inches.",
+                    "state_of_main_object": " A large bowl now holds thoroughly rinsed beans submerged under at least two inches of water."
+                },
+                {
+                    "step": "Boiling the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "shape similar",
+                            2
+                        ],
+                        [
+                            "water",
+                            "shape similar",
+                            2
+                        ],
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "stove",
+                            "new"
+                        ]
+                    ],
+                    "action": "Then, the person transfers the beans and water into a large pot and bring it to a boil over medium-high heat on the stove.",
+                    "state_of_main_object": " A large pot containing beans and water is on the stove, the water boiling over medium-high heat."
+                },
+                {
+                    "step": "Simmering the Beans",
+                    "object": [
+                        [
+                            "beans",
+                            "shape similar",
+                            3
+                        ],
+                        [
+                            "water",
+                            "shape similar",
+                            3
+                        ],
+                        [
+                            "pot",
+                            "total similar",
+                            3
+                        ],
+                        [
+                            "stove",
+                            "total similar",
+                            3
+                        ]
+                    ],
+                    "action": "Finally, the person reduces the heat to low, covers the pot, and let the beans simmer until they are tender.",
+                    "state_of_main_object": " The beans are now simmering in a covered pot on low heat, soon to be tender and ready to eat."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.33
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.6,
+                    0.45
+                ],
+                [
+                    0.7,
+                    0.75,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.65,
+                    0.7,
+                    0.85,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cooking Broccoli",
+            "steps": [
+                {
+                    "step": "Cleaning the Broccoli",
+                    "object": [
+                        [
+                            "broccoli",
+                            "new"
+                        ]
+                    ],
+                    "action": "Rinse the fresh broccoli under cool tap water.",
+                    "state_of_main_object": " Fresh broccoli, now clean and damp, sits ready for the next step of cooking."
+                },
+                {
+                    "step": "Cutting Broccoli",
+                    "object": [
+                        [
+                            "broccoli",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cut the broccoli into smaller florets using a sharp knife.",
+                    "state_of_main_object": " The broccoli is now clean and under the tap.\nstate 2"
+                },
+                {
+                    "step": "Boiling Water",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Put water in a pot and bring it to a boil on the stove.",
+                    "state_of_main_object": " The pot is full of boiling water on the stove."
+                },
+                {
+                    "step": "Cooking Broccoli",
+                    "object": [
+                        [
+                            "pot",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "broccoli",
+                            "similar shape",
+                            2
+                        ]
+                    ],
+                    "action": "Add the cut broccoli into the boiling water and let it cook for few minutes.",
+                    "state_of_main_object": " The pot on the stove now contains boiling water with cooking broccoli florets.\n"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.5,
+                    0.7,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.3,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cooking Peppers",
+            "steps": [
+                {
+                    "step": "Gathering Ingredients",
+                    "object": [
+                        [
+                            "peppers",
+                            "new"
+                        ],
+                        [
+                            "salt",
+                            "new"
+                        ],
+                        [
+                            "oil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Get fresh peppers, salt, and cooking oil.",
+                    "state_of_main_object": " Fresh peppers, salt, and cooking oil are prepared for cooking."
+                },
+                {
+                    "step": "Prepping Peppers",
+                    "object": [
+                        [
+                            "peppers",
+                            "similar (total similar)",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cut the peppers into strips using a knife.",
+                    "state_of_main_object": " A pile of fresh pepper strips, alongside some salt and cooking oil, is on the cutting board."
+                },
+                {
+                    "step": "Heating Oil",
+                    "object": [
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "oil",
+                            "similar (texture similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Heat a non-stick pan, pour the oil into it.",
+                    "state_of_main_object": " A non-stick pan warmed up with oil awaits for the next ingredients."
+                },
+                {
+                    "step": "Cooking Peppers",
+                    "object": [
+                        [
+                            "peppers",
+                            "similar (total similar)",
+                            2
+                        ],
+                        [
+                            "pan",
+                            "similar (total similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Put the pepper strips in the heated oil and cook for about 5 minutes or until they are soft.",
+                    "state_of_main_object": " The non-stick pan is filled with soft, cooked pepper strips sauteed in oil."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cut Honeydew Melon",
+            "steps": [
+                {
+                    "step": "Cleaning the Melon",
+                    "object": [
+                        [
+                            "honeydew melon",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "towel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person rinses the honeydew melon under water and dries it off with a towel.",
+                    "state_of_main_object": " The Honeydew melon is clean and dry, ready for the next step of cutting."
+                },
+                {
+                    "step": "Cutting the Melon in Half",
+                    "object": [
+                        [
+                            "honeydew melon",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person uses knife to cut the melon into two halves from top to bottom.",
+                    "state_of_main_object": " Two clean halves of a honeydew melon sit on the cutting board, freshly split with a knife."
+                },
+                {
+                    "step": "Removing the Seeds",
+                    "object": [
+                        [
+                            "melon half",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person uses a spoon to remove the seeds from both halves of the melon.",
+                    "state_of_main_object": " Honeydew melon halves, now seedless, are present."
+                },
+                {
+                    "step": "Slicing the Halves",
+                    "object": [
+                        [
+                            "melon half",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "knife",
+                            "similar total",
+                            2
+                        ]
+                    ],
+                    "action": "Person uses a knife to slice each melon half.",
+                    "state_of_main_object": " The honeydew melon is clean and divided into smaller, seedless slices."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.3,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cutting Watermelon",
+            "steps": [
+                {
+                    "step": "Prepare the Watermelon",
+                    "object": [
+                        [
+                            "watermelon",
+                            "new"
+                        ],
+                        [
+                            "table",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the whole watermelon on a clean table.",
+                    "state_of_main_object": " The entire watermelon lies on a clean, flat surface."
+                },
+                {
+                    "step": "Cutting the Top and Bottom",
+                    "object": [
+                        [
+                            "watermelon",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using a knife to cut off the top and bottom of the watermelon.",
+                    "state_of_main_object": " A watermelon with its top and bottom parts severed sits on the clean table."
+                },
+                {
+                    "step": "Slicing it Vertically",
+                    "object": [
+                        [
+                            "watermelon",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Person using the knife to slice the watermelon vertically into half.",
+                    "state_of_main_object": " Two large halves of watermelon sit on the table, freshly cut with a knife."
+                },
+                {
+                    "step": "Quartering the halves",
+                    "object": [
+                        [
+                            "watermelon",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Person using the knife to cut the halved watermelon further into quarters.",
+                    "state_of_main_object": " Four quarters of cut watermelon are on the table."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.8,
+                    0.6
+                ],
+                [
+                    0.5,
+                    0.7,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cut Dragon Fruit",
+            "steps": [
+                {
+                    "step": "Preparing the Dragon Fruit",
+                    "object": [
+                        [
+                            "dragon fruit",
+                            "new"
+                        ],
+                        [
+                            "table",
+                            "new"
+                        ]
+                    ],
+                    "action": "Set the dragon fruit on a clean table.",
+                    "state_of_main_object": " A whole dragon fruit is placed on a clean table."
+                },
+                {
+                    "step": "Cutting the Dragon Fruit in Half",
+                    "object": [
+                        [
+                            "dragon fruit",
+                            "similar(total similar)"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Hold the dragon fruit steady and cut it in half using the knife.",
+                    "state_of_main_object": " On the clean table sits a dragon fruit cut in half."
+                },
+                {
+                    "step": "Scooping out the Flesh",
+                    "object": [
+                        [
+                            "dragon fruit",
+                            "similar(texture similar)"
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use the spoon to scoop out the white or red flesh of the dragon fruit.",
+                    "state_of_main_object": " Two halves of a hollowed dragon fruit lay on the table, and their flesh has been removed."
+                },
+                {
+                    "step": "Chopping Into Small Pieces",
+                    "object": [
+                        [
+                            "dragon fruit",
+                            "similar(shape similar)"
+                        ],
+                        [
+                            "knife",
+                            "same as step 2"
+                        ]
+                    ],
+                    "action": "Chop the scooped dragon fruit flesh into small pieces with the knife.",
+                    "state_of_main_object": " The clean table now has chopped pieces of dragon fruit flesh."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.3,
+                    0.1
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.3,
+                    0.8,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.1,
+                    0.5,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Drying Apples in Oven",
+            "steps": [
+                {
+                    "step": "Preparing the Apples",
+                    "object": [
+                        [
+                            "apple",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use the knife to cut apples into thin slices.",
+                    "state_of_main_object": " Thinly sliced apples are ready on the cutting board."
+                },
+                {
+                    "step": "Arranging Apples",
+                    "object": [
+                        [
+                            "apple",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "tray",
+                            "new"
+                        ]
+                    ],
+                    "action": "Arrange the apple slices on a baking tray neatly.",
+                    "state_of_main_object": " A baking tray is neatly arranged with thin apple slices."
+                },
+                {
+                    "step": "Preheating the Oven",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ]
+                    ],
+                    "action": "Preheat the oven to 200\u00b0F (93\u00b0C).",
+                    "state_of_main_object": " Thinly sliced apples are arranged on a baking tray in a preheated oven."
+                },
+                {
+                    "step": "Drying Apples",
+                    "object": [
+                        [
+                            "apple",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "oven",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "tray",
+                            "similar(total similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Put the tray in the oven and dry the apple slices for about 2-3 hours.",
+                    "state_of_main_object": " The apple slices are being dried inside a preheated oven."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.7,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Juicing a Potato",
+            "steps": [
+                {
+                    "step": "Cleaning the potato",
+                    "object": [
+                        [
+                            "potato",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "brush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using water and a brush to clean the dirt off the potato.",
+                    "state_of_main_object": " One clean potato sits on the counter, free of any dirt."
+                },
+                {
+                    "step": "Cutting the potato",
+                    "object": [
+                        [
+                            "potato",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using a knife to cut the potato into small pieces.",
+                    "state_of_main_object": " The clean potato has been cut into small pieces."
+                },
+                {
+                    "step": "Placing potato in the juicer",
+                    "object": [
+                        [
+                            "potato pieces",
+                            "similar(texture similar)",
+                            2
+                        ],
+                        [
+                            "juicer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person puts the small pieces of potato into a juicer.",
+                    "state_of_main_object": " Pieces of potato are inside the juicer, ready to be processed."
+                },
+                {
+                    "step": "Juicing the potato",
+                    "object": [
+                        [
+                            "potato pieces",
+                            "similar(shape similar)",
+                            3
+                        ],
+                        [
+                            "juicer",
+                            "similar(total similar)",
+                            3
+                        ]
+                    ],
+                    "action": "Person starts the juicer to extract the juice from the potato pieces.",
+                    "state_of_main_object": " The juicer contains fresh potato juice extracted from the small potato pieces."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.5,
+                    0.7,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Apple Cider",
+            "steps": [
+                {
+                    "step": "Gathering Materials and Ingredients",
+                    "object": [
+                        [
+                            "ingredients (apples, sugar, spices)",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather all the necessary materials and ingredients like apples, sugar and spices.",
+                    "state_of_main_object": " Apples, sugar, and spices, the primary ingredients for apple cider, are ready on the counter."
+                },
+                {
+                    "step": "Making Apple Puree",
+                    "object": [
+                        [
+                            "bowl",
+                            "new"
+                        ],
+                        [
+                            "ingredients (apples)",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Place the apples in a large bowl and mash them into a puree using a fork.",
+                    "state_of_main_object": " A large bowl containing a pureed apple mixture from mashed apples is on the countertop."
+                },
+                {
+                    "step": "Adding Spices and Sugar",
+                    "object": [
+                        [
+                            "apple puree",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "ingredients (spices, sugar)",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Add the sugar and spices into the apple puree and mix well.",
+                    "state_of_main_object": " A large bowl holds a well-mixed blend of apple puree, sugar, and spices."
+                },
+                {
+                    "step": "Heating the Mixture",
+                    "object": [
+                        [
+                            "apple puree",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "pot",
+                            "new"
+                        ]
+                    ],
+                    "action": "Transfer the prepared puree into a pot and heat it on low flame until it turns into cider.",
+                    "state_of_main_object": " A pot filled with homemade apple cider is simmering on a low flame."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.2,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.2,
+                    1.0,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.4,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.1,
+                    0.2,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Banana Milk",
+            "steps": [
+                {
+                    "step": "Gathering ingredients",
+                    "object": [
+                        [
+                            "banana",
+                            "new"
+                        ],
+                        [
+                            "milk",
+                            "new"
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ],
+                        [
+                            "blender",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collect a ripe banana, a glass of milk, some sugar according to taste, and a blender.",
+                    "state_of_main_object": " All the necessary ingredients - a ripe banana, a glass of milk, some sugar, and a blender - are gathered."
+                },
+                {
+                    "step": "Peeling and Slicing the Banana",
+                    "object": [
+                        [
+                            "banana",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Peel the banana with your hands and use a knife to slice it into chunks.",
+                    "state_of_main_object": " A ripe banana has been sliced into chunks and is ready for blending."
+                },
+                {
+                    "step": "Blending ingredients",
+                    "object": [
+                        [
+                            "banana",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "milk",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "sugar",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "blender",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Add the banana chunks, milk and sugar to the blender. Close the lid and blend all the ingredients.",
+                    "state_of_main_object": " All the ingredients - banana chunks, milk, and sugar - have been blended together in the blender to create a smooth mixture."
+                },
+                {
+                    "step": "Pouring into a glass",
+                    "object": [
+                        [
+                            "blender",
+                            "similar total",
+                            3
+                        ],
+                        [
+                            "glass",
+                            "new"
+                        ],
+                        [
+                            "straw",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour the banana milk from the blender into a glass and place a straw.",
+                    "state_of_main_object": " A glass filled with blended banana milk is ready to serve, completed with a straw."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.9,
+                    0.6
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Carrot Juice",
+            "steps": [
+                {
+                    "step": "Gather Ingredients",
+                    "object": [
+                        [
+                            "carrots",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ]
+                    ],
+                    "action": "Compile a selection of fresh carrots, filtered water, and a small amount of sugar.",
+                    "state_of_main_object": " A selection of fresh carrots, filtered water, and a small amount of sugar is ready for use."
+                },
+                {
+                    "step": "Prepare Carrots",
+                    "object": [
+                        [
+                            "carrots",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "peeler",
+                            "new"
+                        ]
+                    ],
+                    "action": "Peel the carrots using a peeler.",
+                    "state_of_main_object": " The carrots are now completely peeled and bare, ready for the next step."
+                },
+                {
+                    "step": "Blend Ingredients",
+                    "object": [
+                        [
+                            "carrots",
+                            "similar texture",
+                            2
+                        ],
+                        [
+                            "water",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "blender",
+                            "new"
+                        ],
+                        [
+                            "sugar",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Put the carrots, water, and sugar into a blender and blend until smooth.",
+                    "state_of_main_object": " A blender containing a smooth mixture of carrots, water, and sugar."
+                },
+                {
+                    "step": "Filter and Serve",
+                    "object": [
+                        [
+                            "carrot blend",
+                            "similar(texture)",
+                            3
+                        ],
+                        [
+                            "strainer",
+                            "new"
+                        ],
+                        [
+                            "glass",
+                            "new"
+                        ]
+                    ],
+                    "action": "Strain the juice using a fine sieve into a glass.",
+                    "state_of_main_object": " There is a glass full of strained carrot juice, with the waste residue left in the sieve."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.4,
+                    0.7,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Coconut Milk",
+            "steps": [
+                {
+                    "step": "Coconut Preparation",
+                    "object": [
+                        [
+                            "coconut",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using a knife to cut coconut into halves.",
+                    "state_of_main_object": " The coconut is now cut into two halves on a cutting board."
+                },
+                {
+                    "step": "Scraping the Coconut Meat",
+                    "object": [
+                        [
+                            "coconut halves",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "coconut scraper",
+                            "new"
+                        ]
+                    ],
+                    "action": "Scrape the meat from the coconut halves using the coconut scraper.",
+                    "state_of_main_object": " The halved coconut has been scraped and the removed meat lays on the side."
+                },
+                {
+                    "step": "Blending Coconut with Water",
+                    "object": [
+                        [
+                            "coconut meat",
+                            "similar texture",
+                            2
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "blender",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add the coconut meat and some water into a blender and blend until it forms a thick mixture.",
+                    "state_of_main_object": " The blender contains a thick mixture of coconut meat and water."
+                },
+                {
+                    "step": "Straining the Mixture",
+                    "object": [
+                        [
+                            "coconut mixture",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "strainer",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Strain the coconut mixture into a bowl using a strainer.",
+                    "state_of_main_object": " There's a bowl filled with freshly made coconut milk, with leftover coconut pulp in the strainer."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.6,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.4,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Make Cinnamon Tea",
+            "steps": [
+                {
+                    "step": "Boil Water",
+                    "object": [
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "kettle",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill the kettle with water and heat.",
+                    "state_of_main_object": " The kettle, filled with water, is being heated."
+                },
+                {
+                    "step": "Add Cinnamon",
+                    "object": [
+                        [
+                            "water",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "cinnamon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add cinnamon sticks into the heated water.",
+                    "state_of_main_object": " The kettle is filled with hot water and immersed cinnamon sticks."
+                },
+                {
+                    "step": "Let it Steep",
+                    "object": [
+                        [
+                            "water",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "cinnamon",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Let the cinnamon steep in the hot water for 10 minutes.",
+                    "state_of_main_object": " A kettle holds hot water that's been steeping with cinnamon sticks for 10 minutes."
+                },
+                {
+                    "step": "Strain and Serve",
+                    "object": [
+                        [
+                            "cinnamon tea",
+                            "new"
+                        ],
+                        [
+                            "cup",
+                            "new"
+                        ]
+                    ],
+                    "action": "Strain the cinnamon tea into a cup and it's ready.",
+                    "state_of_main_object": " A hot cup of cinnamon tea, brewed and strained, is ready to be served."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.5
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Fruit Tea",
+            "steps": [
+                {
+                    "step": "Boil Water",
+                    "object": [
+                        [
+                            "kettle",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill the kettle with water and turn on to heat.",
+                    "state_of_main_object": " The kettle is on and heating up with water inside."
+                },
+                {
+                    "step": "Infuse Tea",
+                    "object": [
+                        [
+                            "tea bag",
+                            "new"
+                        ],
+                        [
+                            "cup",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the tea bag in your cup.",
+                    "state_of_main_object": " A cup with a tea bag sitting inside it is prepared."
+                },
+                {
+                    "step": "Pour Hot Water",
+                    "object": [
+                        [
+                            "cup",
+                            "similar shape",
+                            0.8
+                        ],
+                        [
+                            "kettle",
+                            "similar shape",
+                            0.8
+                        ]
+                    ],
+                    "action": "Pour the hot water from the kettle into the cup.",
+                    "state_of_main_object": " A cup contains a tea bag steeping in hot water."
+                },
+                {
+                    "step": "Add Fruit",
+                    "object": [
+                        [
+                            "cup",
+                            "similar shape",
+                            0.7
+                        ],
+                        [
+                            "fruit",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add your desired fruit, such as slices of lemon or orange, into the cup.",
+                    "state_of_main_object": " The cup now contains a fruit-infused tea with added lemon or orange slices."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.3,
+                    0.4,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Make Ice Cubes with an Ice Tray",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "ice tray",
+                            "new"
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the ice tray near the sink.",
+                    "state_of_main_object": " The ice tray is positioned beside the sink."
+                },
+                {
+                    "step": "Filling the Tray",
+                    "object": [
+                        [
+                            "ice tray",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill the ice tray with cold water from the sink.",
+                    "state_of_main_object": " An ice tray filled with cold water is placed near the sink."
+                },
+                {
+                    "step": "Freezing",
+                    "object": [
+                        [
+                            "ice tray",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "refrigerator",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the filled ice tray into the refrigerator.",
+                    "state_of_main_object": " There is an ice tray filled with cold water in the refrigerator."
+                },
+                {
+                    "step": "Waiting for Ice Cubes",
+                    "object": [
+                        [
+                            "ice tray",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Wait for a few hours for the water to freeze into ice cubes.",
+                    "state_of_main_object": " The ice tray, previously filled with water, is now set in the refrigerator with the water transformed into frozen ice cubes."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Make Iced Chocolate",
+            "steps": [
+                {
+                    "step": "Gather Ingredients",
+                    "object": [
+                        [
+                            "milk",
+                            "new"
+                        ],
+                        [
+                            "chocolate",
+                            "new"
+                        ],
+                        [
+                            "ice cubes",
+                            "new"
+                        ],
+                        [
+                            "dairy cream",
+                            "new"
+                        ],
+                        [
+                            "blender",
+                            "new"
+                        ]
+                    ],
+                    "action": "Prepare ingredients: milk, chocolate, ice cubes, dairy cream.",
+                    "state_of_main_object": " Milk, chocolate, ice cubes, and dairy cream are ready for use."
+                },
+                {
+                    "step": "Melting the Chocolate",
+                    "object": [
+                        [
+                            "chocolate",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "pot",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the chocolate in a pot and melt it over the stove.",
+                    "state_of_main_object": " A pot sits on the stove containing melted chocolate."
+                },
+                {
+                    "step": "Blend the Ingredients",
+                    "object": [
+                        [
+                            "milk",
+                            "shape similar",
+                            1
+                        ],
+                        [
+                            "chocolate",
+                            "similar (total)",
+                            2
+                        ],
+                        [
+                            "ice cubes",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "dairy cream",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "blender",
+                            "similar (total)",
+                            1
+                        ]
+                    ],
+                    "action": "Put the melted chocolate, milk, ice cubes and cream in the blender.",
+                    "state_of_main_object": " The blender contains the ingredients"
+                },
+                {
+                    "step": "Serve the Iced Chocolate",
+                    "object": [
+                        [
+                            "glass",
+                            "new"
+                        ],
+                        [
+                            "mixture",
+                            "similar shape",
+                            3
+                        ]
+                    ],
+                    "action": "Pour the mixture into a glass.",
+                    "state_of_main_object": " A glass is filled with the iced chocolate mixture."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.5,
+                    0.7,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.4,
+                    0.5,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Root Beer",
+            "steps": [
+                {
+                    "step": "Gathering Ingredients",
+                    "object": [
+                        [
+                            "root beer extract",
+                            "new"
+                        ],
+                        [
+                            "sugar",
+                            "new"
+                        ],
+                        [
+                            "yeast",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather all the required ingredients and materials.",
+                    "state_of_main_object": " All necessary ingredients and materials for making root beer are assembled on the kitchen counter."
+                },
+                {
+                    "step": "Mixing Ingredients",
+                    "object": [
+                        [
+                            "root beer extract",
+                            "similar"
+                        ],
+                        [
+                            "sugar",
+                            "similar"
+                        ],
+                        [
+                            "yeast",
+                            "similar"
+                        ],
+                        [
+                            "water",
+                            "similar"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour root beer extract, sugar, yeast into a large mixing bowl, then add the water.",
+                    "state_of_main_object": " A large mixing bowl contains a mixture of root beer extract, sugar, yeast, and water."
+                },
+                {
+                    "step": "Stirring the Mixture",
+                    "object": [
+                        [
+                            "mixture",
+                            "similar"
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Stir the mixture with the spoon until all the ingredients are fully dissolved.",
+                    "state_of_main_object": " The large mixing bowl now contains a fully dissolved mixture of root beer extract, sugar, yeast, and water."
+                },
+                {
+                    "step": "Bottling",
+                    "object": [
+                        [
+                            "mixture",
+                            "similar"
+                        ],
+                        [
+                            "bottle",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour the mixture into a bottle, close it tightly and allow it to ferment.",
+                    "state_of_main_object": " A closed bottle contains fermenting root beer mixture."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Sake",
+            "steps": [
+                {
+                    "step": "Selecting Rice",
+                    "object": [
+                        [
+                            "rice",
+                            "new"
+                        ]
+                    ],
+                    "action": "Start by selecting the appropriate type of rice for sake.",
+                    "state_of_main_object": " The chosen type of rice is ready for making sake."
+                },
+                {
+                    "step": "Washing and Steaming Rice",
+                    "object": [
+                        [
+                            "rice",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "stove",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wash the rice thoroughly and then steam it on the stove.",
+                    "state_of_main_object": " Selected rice for sake-making is now clean and steamed on the stove."
+                },
+                {
+                    "step": "Koji Cultivation",
+                    "object": [
+                        [
+                            "rice",
+                            "similar(shape similar)",
+                            2
+                        ],
+                        [
+                            "koji",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add koji to the steamed rice to convert the rice\u2019s starch into sugar.",
+                    "state_of_main_object": " A mix of freshly steamed rice and koji, initiating the conversion of starch into sugar, sits in a vessel."
+                },
+                {
+                    "step": "Fermentation",
+                    "object": [
+                        [
+                            "rice-kji mixture",
+                            "similar(texture similar)",
+                            3
+                        ],
+                        [
+                            "water",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "yeast",
+                            "new"
+                        ]
+                    ],
+                    "action": "Put the rice-koji mixture in a tub, add water and yeast to start the fermentation process.",
+                    "state_of_main_object": " A tub is filled with a fermenting mixture of rice, koji, water, and yeast, initiating the process of sake production."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.5,
+                    0.8,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Soda",
+            "steps": [
+                {
+                    "step": "Getting a Glass",
+                    "object": [
+                        [
+                            "glass",
+                            "new"
+                        ]
+                    ],
+                    "action": "Get a clean, empty glass.",
+                    "state_of_main_object": " There is a clean, empty glass on the counter."
+                },
+                {
+                    "step": "Pouring Syrup",
+                    "object": [
+                        [
+                            "glass",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "syrup",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour some soda syrup into the glass.",
+                    "state_of_main_object": " An empty glass is partially filled with soda syrup."
+                },
+                {
+                    "step": "Adding Carbonated Water",
+                    "object": [
+                        [
+                            "glass",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "carbonated water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Pour carbonated water into the glass.",
+                    "state_of_main_object": " A glass is filled with a mix of soda syrup and carbonated water."
+                },
+                {
+                    "step": "Stirring the Soda",
+                    "object": [
+                        [
+                            "glass",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Stir the mix of syrup and carbonated water with a spoon.",
+                    "state_of_main_object": " The glass contains mixed soda, fully blended by stirring, ready for drinking."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning Rubber",
+            "steps": [
+                {
+                    "step": "Gather Cleaning Supplies",
+                    "object": [
+                        [
+                            "cloth",
+                            "new"
+                        ],
+                        [
+                            "soap",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather a clean, soft cloth and mild soap.",
+                    "state_of_main_object": " A clean, soft cloth and mild soap are ready for use to clean the rubber."
+                },
+                {
+                    "step": "Prepare Soapy Water",
+                    "object": [
+                        [
+                            "soap",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "bucket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix some soap with warm water in a bucket.",
+                    "state_of_main_object": " A bucket filled with warm soapy water and a clean, soft cloth are ready to be used for cleaning rubber."
+                },
+                {
+                    "step": "Scrub the Rubber",
+                    "object": [
+                        [
+                            "rubber",
+                            "new"
+                        ],
+                        [
+                            "cloth",
+                            "similar(shape similar)",
+                            2
+                        ],
+                        [
+                            "soapy water",
+                            "similar(total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Dip the cloth into the soapy water and scrub the rubber.",
+                    "state_of_main_object": " The rubber is now damp and being actively cleaned with a soapy cloth."
+                },
+                {
+                    "step": "Dry the Rubber",
+                    "object": [
+                        [
+                            "rubber",
+                            "similar(total similar)",
+                            3
+                        ]
+                    ],
+                    "action": "Pat the rubber dry using a clean towel.",
+                    "state_of_main_object": " The rubber is now clean and dry, after being scrubbed with soapy water and then dried with a towel."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Remove pet hair from floor",
+            "steps": [
+                {
+                    "step": "Gathering Cleaning Supplies",
+                    "object": [
+                        [
+                            "broom",
+                            "new"
+                        ],
+                        [
+                            "dustpan",
+                            "new"
+                        ]
+                    ],
+                    "action": "Collect a broom and dustpan.",
+                    "state_of_main_object": " A broom and dustpan are ready to be used for cleaning."
+                },
+                {
+                    "step": "Sweeping the Floor",
+                    "object": [
+                        [
+                            "broom",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "dustpan",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "pet hair",
+                            "new"
+                        ]
+                    ],
+                    "action": "Sweep the floor with the broom to collect the pet hair.",
+                    "state_of_main_object": " The floor is swept clean of pet hair, with the pet hair collected in a pile by the broom."
+                },
+                {
+                    "step": "Collecting the Hair",
+                    "object": [
+                        [
+                            "broom",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "dustpan",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "pet hair",
+                            "similar(total similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Sweep the pile of pet hair into the dustpan with the broom.",
+                    "state_of_main_object": " The floor is clean, and the dustpan contains the collected pet hair."
+                },
+                {
+                    "step": "Disposing of the Hair",
+                    "object": [
+                        [
+                            "dustpan",
+                            "similar(total similar)",
+                            3
+                        ],
+                        [
+                            "trash bag",
+                            "new"
+                        ],
+                        [
+                            "pet hair",
+                            "similar(total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Dump the pet hair from the dustpan into the trash bag.",
+                    "state_of_main_object": " The floor is clean with no pet hair, and the pet hair is disposed of in the trash bag."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.4,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.2
+                ],
+                [
+                    0.3,
+                    0.9,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.4,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Wash Net Curtains",
+            "steps": [
+                {
+                    "step": "Remove the Curtains",
+                    "object": [
+                        [
+                            "curtains",
+                            "new"
+                        ]
+                    ],
+                    "action": "Take down the net curtains from the window.",
+                    "state_of_main_object": " The net curtains have been removed from the window and are ready to be washed."
+                },
+                {
+                    "step": "Soak the Curtains",
+                    "object": [
+                        [
+                            "curtains",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "basin",
+                            "new"
+                        ]
+                    ],
+                    "action": "Soak your curtains in a basin filled with cold water.",
+                    "state_of_main_object": " The net curtains are now submerged in a basin of cold water."
+                },
+                {
+                    "step": "Wash the Curtains",
+                    "object": [
+                        [
+                            "curtains",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "soap",
+                            "new"
+                        ]
+                    ],
+                    "action": "Apply some soap to the curtains and gently rub to create lather.",
+                    "state_of_main_object": " The net curtains are submerged in the basin, covered in soapy lather."
+                },
+                {
+                    "step": "Rinse and Dry",
+                    "object": [
+                        [
+                            "curtains",
+                            "texture similar",
+                            1
+                        ]
+                    ],
+                    "action": "Rinse your curtains thoroughly and allow them to drip-dry.",
+                    "state_of_main_object": " The net curtains are clean and wet, hanging to drip-dry."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.4
+                ],
+                [
+                    0.4,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.4,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning Chocolate from Carpet",
+            "steps": [
+                {
+                    "step": "Removing Loose Chocolate",
+                    "object": [
+                        [
+                            "carpet",
+                            "new"
+                        ],
+                        [
+                            "chocolate",
+                            "new"
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a spoon to gently scrape off the loose pieces of chocolate from the carpet.",
+                    "state_of_main_object": " The carpet has fewer chocolate pieces on it after some have been gently scraped off using a spoon."
+                },
+                {
+                    "step": "Applying Detergent Solution",
+                    "object": [
+                        [
+                            "carpet",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "detergent solution",
+                            "new"
+                        ],
+                        [
+                            "cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add some detergent solution onto a cloth and dab it on the stained area.",
+                    "state_of_main_object": " The stained area of the carpet is slightly damp, with detergent solution applied, and the loose chocolate pieces have been removed."
+                },
+                {
+                    "step": "Blotting the Stain",
+                    "object": [
+                        [
+                            "carpet",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "cloth",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Blot the stain with the damp cloth, starting from the outer edge inward to avoid spreading the stain.",
+                    "state_of_main_object": " The chocolate stain on the carpet is partially removed and damp from the detergent solution."
+                },
+                {
+                    "step": "Drying the Carpet",
+                    "object": [
+                        [
+                            "carpet",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "dry towel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Dry the area by placing a dry towel over it and applying pressure. You can also let it air dry.",
+                    "state_of_main_object": " The stained area of the carpet is now cleaned, damp, and covered with a dry towel or left to air dry."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.3,
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.4,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Clean a Canvas",
+            "steps": [
+                {
+                    "step": "Collect Cleaning Materials",
+                    "object": [
+                        [
+                            "soap",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather a mild soap, clean water, and a soft cloth.",
+                    "state_of_main_object": " A mild soap, clean water, and a soft cloth are prepared and ready to use."
+                },
+                {
+                    "step": "Make Soapy Water",
+                    "object": [
+                        [
+                            "soap",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "water",
+                            "similar(total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Mix a small amount of soap with the clean water.",
+                    "state_of_main_object": " A soap and water solution, and a soft cloth are prepared for cleaning."
+                },
+                {
+                    "step": "Wash the Canvas",
+                    "object": [
+                        [
+                            "canvas",
+                            "new"
+                        ],
+                        [
+                            "soapy water",
+                            "similar(texture similar)",
+                            3
+                        ],
+                        [
+                            "cloth",
+                            "similar(total similar)",
+                            4
+                        ]
+                    ],
+                    "action": "Dip the soft cloth in the soapy water and gently clean the canvas.",
+                    "state_of_main_object": " The canvas is now being gently cleaned with a soft cloth dipped in soapy water, therefore it's moist and undergoing cleaning."
+                },
+                {
+                    "step": "Dry the Canvas",
+                    "object": [
+                        [
+                            "canvas",
+                            "similar(total similar)",
+                            5
+                        ],
+                        [
+                            "dry cloth",
+                            "similar(texture similar)",
+                            6
+                        ]
+                    ],
+                    "action": "Use a dry soft cloth to pat the canvas dry.",
+                    "state_of_main_object": " The canvas is cleaned and gently dried, looking fresh and tidy."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.4
+                ],
+                [
+                    0.4,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.4,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning a Dirty Baseball",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "dirty baseball",
+                            "new"
+                        ],
+                        [
+                            "bucket",
+                            "new"
+                        ],
+                        [
+                            "warm water",
+                            "new"
+                        ],
+                        [
+                            "liquid soap",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill a bucket with warm water and add a few drops of liquid soap.",
+                    "state_of_main_object": " There is a bucket filled with warm soapy water ready for cleaning."
+                },
+                {
+                    "step": "Soaking",
+                    "object": [
+                        [
+                            "dirty baseball",
+                            "shape similar",
+                            1
+                        ],
+                        [
+                            "soapy water",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place the dirty baseball into the bucket with soapy water.",
+                    "state_of_main_object": " The dirty baseball is submerged in a bucket filled with warm, soapy water."
+                },
+                {
+                    "step": "Scrubbing",
+                    "object": [
+                        [
+                            "soaking baseball",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "soft cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a soft cloth to scrub the baseball gently.",
+                    "state_of_main_object": " The baseball, now soaked in a bucket of soapy water, is being scrubbed with a soft cloth.\n"
+                },
+                {
+                    "step": "Drying",
+                    "object": [
+                        [
+                            "wet baseball",
+                            "shape similar",
+                            1
+                        ],
+                        [
+                            "dry towel",
+                            "new"
+                        ]
+                    ],
+                    "action": "Remove the baseball from water, and use a dry towel to pat it dry.",
+                    "state_of_main_object": " The once dirty baseball is now clean and dry, sitting outside of the bucket."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.2
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cutting Mushrooms",
+            "steps": [
+                {
+                    "step": "Gather Materials",
+                    "object": [
+                        [
+                            "mushroom",
+                            "new"
+                        ],
+                        [
+                            "cutting board",
+                            "new"
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place a fresh mushroom, a cutting board, and a sharp knife on the counter.",
+                    "state_of_main_object": " A fresh mushroom, a cutting board, and a sharp knife are set in position on the kitchen counter."
+                },
+                {
+                    "step": "Clean the Mushroom",
+                    "object": [
+                        [
+                            "mushroom",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using a cloth, gently clean the mushroom to remove any dirt.",
+                    "state_of_main_object": " A clean mushroom, a cutting board, and a sharp knife are on the counter."
+                },
+                {
+                    "step": "Place the Mushroom on Cutting Board",
+                    "object": [
+                        [
+                            "mushroom",
+                            "similar total",
+                            2
+                        ],
+                        [
+                            "cutting board",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Put the cleaned mushroom on the cutting board.",
+                    "state_of_main_object": " A clean mushroom is laid out on the cutting board ready to be cut."
+                },
+                {
+                    "step": "Slice the Mushroom",
+                    "object": [
+                        [
+                            "mushroom",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "knife",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Using the knife, carefully slice the mushroom into thin pieces.",
+                    "state_of_main_object": " Thinly sliced pieces of mushroom lay neatly on the cutting board."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.4,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.4
+                ],
+                [
+                    0.5,
+                    0.8,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.3,
+                    0.5,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cutting Sushi",
+            "steps": [
+                {
+                    "step": "Preparing a clean cutting area",
+                    "object": [
+                        [
+                            "cutting board",
+                            "new"
+                        ],
+                        [
+                            "clean cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wipe the area with a clean cloth and position the cutting board.",
+                    "state_of_main_object": " A clean area is established with a cutting board set in position."
+                },
+                {
+                    "step": "Position the sushi roll",
+                    "object": [
+                        [
+                            "cutting board",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "sushi roll",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the sushi roll on the cutting board.",
+                    "state_of_main_object": " The sushi roll is positioned on a clean and prepared cutting board."
+                },
+                {
+                    "step": "Preparing the knife",
+                    "object": [
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Clean your knife with warm water and dry it.",
+                    "state_of_main_object": " The clean, dry knife is ready for use next to the sushi roll on the cutting board."
+                },
+                {
+                    "step": "Cutting the sushi roll",
+                    "object": [
+                        [
+                            "cutting board",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "sushi roll",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "knife",
+                            "similar texture",
+                            1
+                        ]
+                    ],
+                    "action": "Cut the sushi roll into bite-sized pieces using the knife.",
+                    "state_of_main_object": " The sushi roll on the cutting board has been divided into bite-sized pieces."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.6,
+                    0.5
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.5,
+                    0.7,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Decorate a Laptop",
+            "steps": [
+                {
+                    "step": "Clean the Laptop Surface",
+                    "object": [
+                        [
+                            "laptop",
+                            "new"
+                        ],
+                        [
+                            "cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person using a cloth to carefully clean the surface of the laptop.",
+                    "state_of_main_object": " The laptop is clean and free of dust or dirt due to the cloth wiping."
+                },
+                {
+                    "step": "Choose Stickers",
+                    "object": [
+                        [
+                            "stickers",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choose some laptop-compatible stickers of your liking.",
+                    "state_of_main_object": " The laptop is clean and ready for decoration. The individual has a selection of desired laptop-compatible stickers at hand."
+                },
+                {
+                    "step": "Apply Stickers",
+                    "object": [
+                        [
+                            "laptop",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "stickers",
+                            "similar(total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Person peeling off the backing paper and sticking to the laptop surface.",
+                    "state_of_main_object": " The laptop is now decorated with stickers on its cleaned surface."
+                },
+                {
+                    "step": "Confirm Decoration",
+                    "object": [
+                        [
+                            "laptop",
+                            "similar texture",
+                            3
+                        ]
+                    ],
+                    "action": "Examine the laptop to ensure stickers are applied evenly and secure.",
+                    "state_of_main_object": " The laptop now has new stickers applied evenly and securely on its surface."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.6,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Tulips",
+            "steps": [
+                {
+                    "step": "Identifying Ready Tulips",
+                    "object": [
+                        [
+                            "tulips",
+                            "new"
+                        ]
+                    ],
+                    "action": "Identify which tulips are ready to be harvested - they should be brightly colored.",
+                    "state_of_main_object": " The tulip garden has some brightly colored tulips marked for harvesting."
+                },
+                {
+                    "step": "Holding the Stem",
+                    "object": [
+                        [
+                            "tulip",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "hand",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use one hand to gently grab the stem of the tulip near the base.",
+                    "state_of_main_object": " The tulip is being held gently at the base of its stem."
+                },
+                {
+                    "step": "Cutting the Stem",
+                    "object": [
+                        [
+                            "tulip",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "hand",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "pruning shears",
+                            "new"
+                        ]
+                    ],
+                    "action": "With the other hand, use a set of pruning shears to cut the stem near the base.",
+                    "state_of_main_object": " One brightly-colored tulip has been cut from its stem at the base using pruning shears."
+                },
+                {
+                    "step": "Storing the Tulip",
+                    "object": [
+                        [
+                            "tulip",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "vase",
+                            "new"
+                        ]
+                    ],
+                    "action": "Carefully place the freshly cut tulip in a vase of water.",
+                    "state_of_main_object": " A vase filled with water and a freshly cut tulip."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.4,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.5,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Cone Hat",
+            "steps": [
+                {
+                    "step": "Select the Paper",
+                    "object": [
+                        [
+                            "paper",
+                            "new"
+                        ]
+                    ],
+                    "action": "Select a large paper sheet of your favorite color.",
+                    "state_of_main_object": " A large paper sheet in your favorite color lies chosen, ready for the next step."
+                },
+                {
+                    "step": "Shape the Paper into a Cone",
+                    "object": [
+                        [
+                            "paper",
+                            "shape similar"
+                        ]
+                    ],
+                    "action": "Person holds the paper and forms it into a cone shape.",
+                    "state_of_main_object": " A large colored paper sheet has been shaped into a cone, forming the main body of a hat."
+                },
+                {
+                    "step": "Secure the Cone Shape",
+                    "object": [
+                        [
+                            "paper",
+                            "similar"
+                        ],
+                        [
+                            "adhesive tape",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person secures the cone shape using adhesive tape.",
+                    "state_of_main_object": " A cone-shaped hat made of paper, secured with adhesive tape, is in the person's hands."
+                },
+                {
+                    "step": "Attach Elastic String",
+                    "object": [
+                        [
+                            "adhesive tape",
+                            "similar texture"
+                        ],
+                        [
+                            "elastic string",
+                            "new"
+                        ]
+                    ],
+                    "action": "Attach an elastic string at the base of the cone hat using adhesive tape.",
+                    "state_of_main_object": " A cone hat, secured with adhesive tape and having an elastic string attached at its base, is complete and ready to wear."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.5,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Drone",
+            "steps": [
+                {
+                    "step": "Assembling Drone Frame",
+                    "object": [
+                        [
+                            "drone frame",
+                            "new"
+                        ],
+                        [
+                            "screws",
+                            "new"
+                        ]
+                    ],
+                    "action": "Attach all parts of drone frame together using screws.",
+                    "state_of_main_object": " The drone frame is assembled with all parts secured together using screws."
+                },
+                {
+                    "step": "Attaching Motors",
+                    "object": [
+                        [
+                            "drone frame",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "motors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fix the motors appropriately to the assembled drone frame.",
+                    "state_of_main_object": " The drone frame is now assembled with motors properly attached to it."
+                },
+                {
+                    "step": "Connecting the Electronics",
+                    "object": [
+                        [
+                            "drone frame",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "electronics (flight controller, ESCs, etc.)",
+                            "new"
+                        ]
+                    ],
+                    "action": "Carefully fit and connect the electronics to the drone frame and motors.",
+                    "state_of_main_object": " The drone is now assembled with the frame, motors, and electronics all properly connected."
+                },
+                {
+                    "step": "Installing the Propellers",
+                    "object": [
+                        [
+                            "drone",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "propellers",
+                            "new"
+                        ]
+                    ],
+                    "action": "Securely attach the propellers to the motors.",
+                    "state_of_main_object": " The drone is fully assembled"
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.6,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Frisbee",
+            "steps": [
+                {
+                    "step": "Materials Gathering",
+                    "object": [
+                        [
+                            "plastic sheet",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather a circular plastic sheet.",
+                    "state_of_main_object": " A circular plastic sheet is prepared for shaping into a Frisbee."
+                },
+                {
+                    "step": "Cutting Into Shape",
+                    "object": [
+                        [
+                            "plastic sheet",
+                            "similar(total)",
+                            1
+                        ],
+                        [
+                            "scissors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Using the scissors, cut the plastic sheet into a disc shape.",
+                    "state_of_main_object": " A plastic disc, cut from the original circular sheet, stands ready for further modification."
+                },
+                {
+                    "step": "Forming Frisbee Edge",
+                    "object": [
+                        [
+                            "plastic sheet",
+                            "similar(shape)",
+                            2
+                        ],
+                        [
+                            "heat gun",
+                            "new"
+                        ]
+                    ],
+                    "action": "With a heat gun, mold the edges of the plastic upwards to form a frisbee.",
+                    "state_of_main_object": " The circular plastic sheet has been reshaped with raised edges, taking the form of a Frisbee."
+                },
+                {
+                    "step": "Cooling Down",
+                    "object": [
+                        [
+                            "frisbee",
+                            "similar(shape)",
+                            3
+                        ]
+                    ],
+                    "action": "Leave the frisbee to cool down and solidify.",
+                    "state_of_main_object": " The newly formed frisbee sits out, cooling down and solidifying into a stable shape."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.4,
+                    0.7,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Make a Garden Flag",
+            "steps": [
+                {
+                    "step": "Gather Materials",
+                    "object": [
+                        [
+                            "fabric",
+                            "new"
+                        ],
+                        [
+                            "paints",
+                            "new"
+                        ],
+                        [
+                            "brushes",
+                            "new"
+                        ],
+                        [
+                            "rod",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather some fabric, paints, brushes and a rod.",
+                    "state_of_main_object": " Fabric, paints, brushes, and a rod are prepared and laid out ready for use."
+                },
+                {
+                    "step": "Design the Flag",
+                    "object": [
+                        [
+                            "fabric",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "paints",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "brushes",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Use the brushes and paints to create a design suitable for a garden on the fabric.",
+                    "state_of_main_object": " The fabric now has a painted garden design on it."
+                },
+                {
+                    "step": "Attach Fabric to Rod",
+                    "object": [
+                        [
+                            "fabric",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "rod",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "After the paint has dried, attach one edge of the fabric to the rod.",
+                    "state_of_main_object": " The painted design on the fabric is attached to the rod, representing a garden flag."
+                },
+                {
+                    "step": "Display the Flag",
+                    "object": [
+                        [
+                            "rod with attached flag",
+                            "shape transform",
+                            1
+                        ]
+                    ],
+                    "action": "Finally, place the rod with attached flag in a suitable place in the garden.",
+                    "state_of_main_object": " A garden flag, painted and attached to a rod, is displayed in a chosen location in the garden."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.7,
+                    0.5,
+                    0.2
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.7,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.9,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.3,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Gift Box",
+            "steps": [
+                {
+                    "step": "Selecting the Cardstock",
+                    "object": [
+                        [
+                            "cardstock",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choose a piece of cardstock",
+                    "state_of_main_object": " A selected piece of cardstock is at hand, ready to be turned into a gift box."
+                },
+                {
+                    "step": "Folding the Cardstock",
+                    "object": [
+                        [
+                            "cardstock",
+                            "texture similar",
+                            1
+                        ]
+                    ],
+                    "action": "Fold the cardstock in half, open it up, and fold it in half the other way.",
+                    "state_of_main_object": " The cardstock is folded into four equal parts, creating a grid-like pattern."
+                },
+                {
+                    "step": "Making the Box Shape",
+                    "object": [
+                        [
+                            "cardstock",
+                            "shape similar",
+                            2
+                        ]
+                    ],
+                    "action": "Fold the corners in on themselves and tape them to create the box shape.",
+                    "state_of_main_object": " The previously flat cardstock is now a box-shaped object, held together by tape at the corners."
+                },
+                {
+                    "step": "Decorating the Box",
+                    "object": [
+                        [
+                            "box",
+                            "shape similar",
+                            3
+                        ],
+                        [
+                            "stickers",
+                            "new"
+                        ],
+                        [
+                            "ribbons",
+                            "new"
+                        ]
+                    ],
+                    "action": "Decorate the box with stickers and ribbons.",
+                    "state_of_main_object": " A folded and assembled cardstock box, decorated with stickers and ribbons."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.7,
+                    1.0,
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.6,
+                    0.8,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.6,
+                    0.6,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Green Tea Face Mask",
+            "steps": [
+                {
+                    "step": "Gathering the Ingredients",
+                    "object": [
+                        [
+                            "green tea",
+                            "new"
+                        ],
+                        [
+                            "honey",
+                            "new"
+                        ],
+                        [
+                            "lemon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Gather the green tea, honey, and lemon.",
+                    "state_of_main_object": " Green tea, honey, and lemon are assembled and ready to use."
+                },
+                {
+                    "step": "Mixing Ingredients",
+                    "object": [
+                        [
+                            "green tea",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "honey",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "lemon",
+                            "similar(total similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Mix one tablespoon of green tea leaves with one tablespoon of honey and lemon.",
+                    "state_of_main_object": " A mixture of green tea leaves, honey, and lemon is prepared."
+                },
+                {
+                    "step": "Applying the Mask",
+                    "object": [
+                        [
+                            "face",
+                            "new"
+                        ],
+                        [
+                            "Green Tea Mixture",
+                            "similar texture",
+                            2
+                        ]
+                    ],
+                    "action": "Apply the green tea mixture on your face.",
+                    "state_of_main_object": " Your face has a layer of green tea, honey, and lemon mixture applied to it."
+                },
+                {
+                    "step": "Rinsing off the Mask",
+                    "object": [
+                        [
+                            "face",
+                            "similar(total similar)",
+                            3
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "towel",
+                            "new"
+                        ]
+                    ],
+                    "action": "After 15-20 minutes, rinse off the mask with warm water and pat the face dry with a clean towel.",
+                    "state_of_main_object": " The face has been cleansed and dried after the application of the green tea mask."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.2,
+                    0.7,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.1,
+                    0.3,
+                    0.4,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Make Paper Basket",
+            "steps": [
+                {
+                    "step": "Fold the Paper",
+                    "object": [
+                        [
+                            "Paper",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fold a piece of paper diagonally to form a triangle.",
+                    "state_of_main_object": " A piece of paper has been folded diagonally, creating a triangle shape."
+                },
+                {
+                    "step": "Cut the Triangle",
+                    "object": [
+                        [
+                            "Paper",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "scissors",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use scissors to trim off the excess from the bottom of the triangle",
+                    "state_of_main_object": " The paper is now a perfect triangle shape with the bottom excess trimmed off."
+                },
+                {
+                    "step": "Fold the Corners",
+                    "object": [
+                        [
+                            "Paper",
+                            "similar texture",
+                            2
+                        ],
+                        [
+                            "fingers",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fold the pointed corners of the triangle towards the base.",
+                    "state_of_main_object": " The paper is now in the shape of an envelope-like structure with pointed corners folded towards the base."
+                },
+                {
+                    "step": "Create the Basket Handle",
+                    "object": [
+                        [
+                            "Paper",
+                            "similar texture",
+                            3
+                        ],
+                        [
+                            "glue",
+                            "new"
+                        ]
+                    ],
+                    "action": "Cut a strip of paper and attach it as a handle using glue",
+                    "state_of_main_object": " A paper basket with a handle now exists, assembled from the folded triangle and the cut strip."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.8,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making a Pirate Hat",
+            "steps": [
+                {
+                    "step": "Fold Paper in Half",
+                    "object": [
+                        [
+                            "paper",
+                            "new"
+                        ]
+                    ],
+                    "action": "Take a rectangular piece of black paper and fold it in half lengthwise.",
+                    "state_of_main_object": " There is a black piece of paper on the table, folded lengthwise."
+                },
+                {
+                    "step": "Fold Corners",
+                    "object": [
+                        [
+                            "paper",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Fold the right and left top corners to meet in the middle.",
+                    "state_of_main_object": " The rectangular black paper is now folded to form a triangular shape with two corners meeting at the middle."
+                },
+                {
+                    "step": "Fold the Bottom Strip Up",
+                    "object": [
+                        [
+                            "paper",
+                            "similar total",
+                            2
+                        ]
+                    ],
+                    "action": "Take the bottom strip and fold it upward to cover the base of the triangle.",
+                    "state_of_main_object": " The black paper is now folded into a triangular shape with the bottom strip covering the base."
+                },
+                {
+                    "step": "Turn over and repeat",
+                    "object": [
+                        [
+                            "paper",
+                            "similar total",
+                            3
+                        ]
+                    ],
+                    "action": "Flip the hat over and repeat the last step.",
+                    "state_of_main_object": " The Pirate Hat is completely made from black paper, double-folded at the base on both sides to keep the triangular shape secure."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.8,
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.7,
+                    0.4
+                ],
+                [
+                    0.3,
+                    0.5,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Chocolate Covered Fruit",
+            "steps": [
+                {
+                    "step": "Preparation of the Fruit",
+                    "object": [
+                        [
+                            "fruit",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wash and dry the fruit you want to cover with chocolate.",
+                    "state_of_main_object": " The fruit intended for chocolate covering is clean and dry."
+                },
+                {
+                    "step": "Melting the Chocolate",
+                    "object": [
+                        [
+                            "chocolate bar",
+                            "new"
+                        ],
+                        [
+                            "bowl",
+                            "new"
+                        ],
+                        [
+                            "microwave",
+                            "new"
+                        ]
+                    ],
+                    "action": "Break the chocolate bar into pieces, put it in a bowl, and microwave it until it melts.",
+                    "state_of_main_object": " The fruit is clean and dry, and a bowl of melted chocolate is prepared."
+                },
+                {
+                    "step": "Dipping the Fruit",
+                    "object": [
+                        [
+                            "fruit",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "melted chocolate",
+                            "similar(total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Dip the fruit into the melted chocolate.",
+                    "state_of_main_object": " The fruit is now covered in a layer of melted chocolate."
+                },
+                {
+                    "step": "Cooling Down",
+                    "object": [
+                        [
+                            "fruit",
+                            "similar(shape similar)",
+                            3
+                        ]
+                    ],
+                    "action": "Put the fruit onto a clean surface or wax paper and let it cool until the chocolate hardens.",
+                    "state_of_main_object": " The fruit, covered with hardened chocolate, is placed on a clean surface or wax paper."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.4,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.7,
+                    0.8,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.5,
+                    0.7,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Making Toast in Oven",
+            "steps": [
+                {
+                    "step": "Preheat the Oven",
+                    "object": [
+                        [
+                            "oven",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person sets the oven at broil setting.",
+                    "state_of_main_object": " The oven is now set and warmed to the broil setting."
+                },
+                {
+                    "step": "Prepare the Bread",
+                    "object": [
+                        [
+                            "bread",
+                            "new"
+                        ],
+                        [
+                            "plate",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place a slice of bread on a plate.",
+                    "state_of_main_object": " There is a slice of bread on the plate, ready to be toasted, and the oven is preheated on the broil setting."
+                },
+                {
+                    "step": "Place Bread in Oven",
+                    "object": [
+                        [
+                            "bread",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "oven",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "oven tray",
+                            "new"
+                        ]
+                    ],
+                    "action": "Person carefully places the plate with bread on an oven tray.",
+                    "state_of_main_object": " An oven tray holds a plate with a slice of bread ready for toasting."
+                },
+                {
+                    "step": "Bake the Bread",
+                    "object": [
+                        [
+                            "bread",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "oven",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Close the oven and bake for about 2-3 minutes or until it turns golden brown.",
+                    "state_of_main_object": " The oven contains a tray holding a plate with a golden-brown toasted slice of bread."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.3,
+                    0.2,
+                    0.1
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.5,
+                    0.3
+                ],
+                [
+                    0.7,
+                    0.8,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.5,
+                    0.7,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Clean Mops",
+            "steps": [
+                {
+                    "step": "Remove Debris",
+                    "object": [
+                        [
+                            "mop",
+                            "new"
+                        ],
+                        [
+                            "debris",
+                            "new"
+                        ]
+                    ],
+                    "action": "Shake off or manually remove the debris attached to the mop.",
+                    "state_of_main_object": " The mop is devoid of any attached debris or dirt."
+                },
+                {
+                    "step": "Fill the Bucket",
+                    "object": [
+                        [
+                            "bucket",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Fill a bucket with warm water and soap.",
+                    "state_of_main_object": " A bucket containing warm, soapy water is prepared."
+                },
+                {
+                    "step": "Soak the Mop",
+                    "object": [
+                        [
+                            "mop",
+                            "similiar",
+                            1
+                        ],
+                        [
+                            "bucket",
+                            "similar",
+                            1
+                        ]
+                    ],
+                    "action": "Place the dirty mop into the bucket filled with warm soapy water.",
+                    "state_of_main_object": " The mop is soaking in a bucket of warm soapy water."
+                },
+                {
+                    "step": "Rinse and Dry",
+                    "object": [
+                        [
+                            "mop",
+                            "similar_shape",
+                            3
+                        ],
+                        [
+                            "water",
+                            "similar",
+                            2
+                        ]
+                    ],
+                    "action": "Rinse the mop with clean water and allow it to dry.",
+                    "state_of_main_object": " The mop is now clean and drying."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.1
+                ],
+                [
+                    0.3,
+                    0.8,
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.2,
+                    0.1,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Clean Sandals",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "action": "Remove any extra dirt from sandals with a dry brush.",
+                    "object": [
+                        [
+                            "sandals",
+                            "new"
+                        ],
+                        [
+                            "brush",
+                            "new"
+                        ]
+                    ],
+                    "state_of_main_object": " The sandals are free of excess dirt, brushed thoroughly with a dry brush."
+                },
+                {
+                    "step": "Soapy Water",
+                    "action": "Mix warm water and detergent in a basin.",
+                    "object": [
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "detergent",
+                            "new"
+                        ],
+                        [
+                            "basin",
+                            "new"
+                        ]
+                    ],
+                    "state_of_main_object": " A basin is prepared with a mixture of warm water and detergent."
+                },
+                {
+                    "step": "Scrubbing the Sandals",
+                    "action": "Dip the brush into soapy water and scrub the sandals.",
+                    "object": [
+                        [
+                            "sandals",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "brush",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "soapy water",
+                            "new"
+                        ]
+                    ],
+                    "state_of_main_object": " The sandals are now damp and soapy, with visible indications of being scrubbed."
+                },
+                {
+                    "step": "Drying",
+                    "action": "Pat sandals with a dry towel and leave them to air dry.",
+                    "object": [
+                        [
+                            "sandals",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "towel",
+                            "new"
+                        ]
+                    ],
+                    "state_of_main_object": " The sandals are damp but clean, left to air dry."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.8,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.7,
+                    0.8,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.6,
+                    0.7,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cleaning Silk Flowers",
+            "steps": [
+                {
+                    "step": "Preparation",
+                    "object": [
+                        [
+                            "silk flowers",
+                            "new"
+                        ],
+                        [
+                            "drying cloth",
+                            "new"
+                        ]
+                    ],
+                    "action": "Set the silk flowers on a drying cloth to protect the surface underneath.",
+                    "state_of_main_object": " The silk flowers are resting on a drying cloth, with the surface beneath them protected."
+                },
+                {
+                    "step": "Dust Removal",
+                    "object": [
+                        [
+                            "silk flowers",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "soft brush",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a soft brush to gently remove the dust from each flower.",
+                    "state_of_main_object": " The silk flowers are now free from dust and sitting on a drying cloth."
+                },
+                {
+                    "step": "Cleaning",
+                    "object": [
+                        [
+                            "silk flowers",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ],
+                        [
+                            "mild soap",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix some water with mild soap and gently dab the flowers with the mixture.",
+                    "state_of_main_object": " The silk flowers are damp from being gently dabbed with a soap and water mixture."
+                },
+                {
+                    "step": "Drying",
+                    "object": [
+                        [
+                            "silk flowers",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "drying cloth",
+                            "similar shape",
+                            1
+                        ]
+                    ],
+                    "action": "Pat the flowers dry with the drying cloth.",
+                    "state_of_main_object": " The silk flowers are clean, damp, and resting on the drying cloth."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.75,
+                    0.65,
+                    0.5
+                ],
+                [
+                    0.75,
+                    1.0,
+                    0.75,
+                    0.6
+                ],
+                [
+                    0.65,
+                    0.75,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.5,
+                    0.6,
+                    0.7,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cook Soybeans",
+            "steps": [
+                {
+                    "step": "Rinsing the Soybeans",
+                    "object": [
+                        [
+                            "soybeans",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the soybeans into a colander and rinse them under cold running water.",
+                    "state_of_main_object": " The colander is filled with rinsed soybeans under a stream of cold water."
+                },
+                {
+                    "step": "Soaking the Soybeans",
+                    "object": [
+                        [
+                            "soybeans",
+                            "similar (total similar)",
+                            1
+                        ],
+                        [
+                            "water",
+                            "similar (total similar)",
+                            1
+                        ]
+                    ],
+                    "action": "Cover the rinsed soybeans with plenty of water and let them soak overnight.",
+                    "state_of_main_object": " The rinsed soybeans are soaking in a bowl filled with water, left to rest overnight."
+                },
+                {
+                    "step": "Rinsing Soaked Soybeans",
+                    "object": [
+                        [
+                            "soybeans",
+                            "similar (total similar)",
+                            2
+                        ],
+                        [
+                            "colander",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "similar (total similar)",
+                            2
+                        ]
+                    ],
+                    "action": "Drain and rinse the soaked soybeans under cold running water.",
+                    "state_of_main_object": " The colander contains rinsed, soaked, and drained soybeans, ready to be cooked."
+                },
+                {
+                    "step": "Cooking the Soybeans",
+                    "object": [
+                        [
+                            "soybeans",
+                            "similar (shape similar)",
+                            3
+                        ],
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "similar (total similar)",
+                            3
+                        ]
+                    ],
+                    "action": "Put the soybeans into a pot, add water, and bring it to a boil. Reduce the heat and let it simmer until the beans are tender.",
+                    "state_of_main_object": " The pot now contains simmering, tender soybeans in boiling water."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.7,
+                    0.3
+                ],
+                [
+                    0.4,
+                    0.7,
+                    1.0,
+                    0.8
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Cooking Zoodles",
+            "steps": [
+                {
+                    "step": "Washing the Zucchini",
+                    "object": [
+                        [
+                            "Zucchini",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "First, wash the zucchini thoroughly under running water.",
+                    "state_of_main_object": " The zucchini is now clean and ready for further preparation."
+                },
+                {
+                    "step": "Cutting the Zucchini",
+                    "object": [
+                        [
+                            "Zucchini",
+                            "similar (total similar)",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Next, use a kitchen knife to cut off the ends of the zucchini.",
+                    "state_of_main_object": " The zucchinis are now clean and their ends are cut off."
+                },
+                {
+                    "step": "Making Zoodles",
+                    "object": [
+                        [
+                            "Zucchini",
+                            "similar (total similar)",
+                            2
+                        ],
+                        [
+                            "spiralizer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use the spiralizer to turn the zucchini into noodle-like zoodles.",
+                    "state_of_main_object": " Spiralized zoodles replace the whole zucchini."
+                },
+                {
+                    "step": "Cooking the Zoodles",
+                    "object": [
+                        [
+                            "Zoodles",
+                            "similar (shape similar)",
+                            3
+                        ],
+                        [
+                            "pan",
+                            "new"
+                        ],
+                        [
+                            "oil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Eventually, heat a small amount of oil in a pan and toss the zoodles for a few minutes until they are hot.",
+                    "state_of_main_object": " A pan filled with hot, freshly cooked zoodles lightly coated in oil is on the stovetop."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.5,
+                    1.0,
+                    0.6,
+                    0.3
+                ],
+                [
+                    0.3,
+                    0.6,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.2,
+                    0.3,
+                    0.5,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Eating Plums",
+            "steps": [
+                {
+                    "step": "Choosing a Plum",
+                    "object": [
+                        [
+                            "plum",
+                            "new"
+                        ]
+                    ],
+                    "action": "Choose a firm, fresh plum which is slightly soft to the touch.",
+                    "state_of_main_object": " You hold a fresh, slightly soft plum ready to be consumed."
+                },
+                {
+                    "step": "Washing the Plum",
+                    "object": [
+                        [
+                            "plum",
+                            "totally similar",
+                            1
+                        ],
+                        [
+                            "sink",
+                            "new"
+                        ],
+                        [
+                            "water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Wash the plum under cold, clean tap water.",
+                    "state_of_main_object": " The plum is clean and ready to be eaten."
+                },
+                {
+                    "step": "Cutting the Plum",
+                    "object": [
+                        [
+                            "plum",
+                            "totally similar",
+                            1
+                        ],
+                        [
+                            "knife",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a knife to cut around the perimeter of the plum.",
+                    "state_of_main_object": " The plum is now cleanly sliced into two halves."
+                },
+                {
+                    "step": "Eating the Plum",
+                    "object": [
+                        [
+                            "plum",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "spoon",
+                            "new"
+                        ]
+                    ],
+                    "action": "Use a spoon to scoop out the plum\u2019s flesh.",
+                    "state_of_main_object": " The fully cleaned and cut plum is ready to be eaten."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.7,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.8,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.0,
+                    0.0,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Feeding Baby Rabbits",
+            "steps": [
+                {
+                    "step": "Preparing Formula",
+                    "object": [
+                        [
+                            "bottle",
+                            "new"
+                        ],
+                        [
+                            "rabbit milk replacer",
+                            "new"
+                        ]
+                    ],
+                    "action": "Mix a measured amount of rabbit milk replacer with warm water in a bottle.",
+                    "state_of_main_object": " A bottle filled with rabbit milk replacer and warm water mixture is ready."
+                },
+                {
+                    "step": "Heating the Formula",
+                    "object": [
+                        [
+                            "bottle",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "warm water",
+                            "new"
+                        ]
+                    ],
+                    "action": "Heat the bottle in a bowl of warm water.",
+                    "state_of_main_object": " The bottle filled with mixed rabbit milk replacer is warmed and ready for feeding."
+                },
+                {
+                    "step": "Feeding the Rabbit",
+                    "object": [
+                        [
+                            "bottle",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "baby rabbit",
+                            "new"
+                        ]
+                    ],
+                    "action": "Hold the baby rabbit upright and gently introduce the nipple of the bottle to its mouth.",
+                    "state_of_main_object": " The baby rabbit, held upright, is beginning to accept the nipple of the bottle containing warm rabbit milk replacer."
+                },
+                {
+                    "step": "Returning Rabbit to Cage",
+                    "object": [
+                        [
+                            "baby rabbit",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "cage",
+                            "new"
+                        ]
+                    ],
+                    "action": "Put the rabbit back in its cage after it has finished feeding.",
+                    "state_of_main_object": " The baby rabbit, now satiated, is back in its cage."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.4,
+                    1.0,
+                    0.7,
+                    0.4
+                ],
+                [
+                    0.2,
+                    0.6,
+                    1.0,
+                    0.5
+                ],
+                [
+                    0.1,
+                    0.3,
+                    0.6,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Grow Pumpkins Indoors",
+            "steps": [
+                {
+                    "step": "Prepare the Pot",
+                    "object": [
+                        [
+                            "pot",
+                            "new"
+                        ],
+                        [
+                            "soil",
+                            "new"
+                        ]
+                    ],
+                    "action": "Add potting soil into a large pot.",
+                    "state_of_main_object": " A large pot filled with potting soil sits indoors, ready for planting."
+                },
+                {
+                    "step": "Plant the seeds",
+                    "object": [
+                        [
+                            "pot",
+                            "similar(total similar)",
+                            1
+                        ],
+                        [
+                            "pumpkin seeds",
+                            "new"
+                        ]
+                    ],
+                    "action": "Bury a few pumpkin seeds in the soil.",
+                    "state_of_main_object": " The large pot is filled with potting soil and a few pumpkin seeds have been planted in it."
+                },
+                {
+                    "step": "Water the soil",
+                    "object": [
+                        [
+                            "pot",
+                            "similar(total similar)",
+                            2
+                        ],
+                        [
+                            "watering can",
+                            "new"
+                        ]
+                    ],
+                    "action": "Moisten the soil using a watering can.",
+                    "state_of_main_object": " The pot now contains damp soil with seeds embedded in it."
+                },
+                {
+                    "step": "Place in appropriate sunlight",
+                    "object": [
+                        [
+                            "pot",
+                            "similar(total similar)",
+                            3
+                        ],
+                        [
+                            "sunlight",
+                            "new"
+                        ]
+                    ],
+                    "action": "Put the pot in a sun-facing window for adequate sunlight.",
+                    "state_of_main_object": " The large pot, containing moist soil and pumpkin seeds, is placed by a sun-facing window."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.4,
+                    0.3
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.5,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.4
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvest Lavender",
+            "steps": [
+                {
+                    "step": "Prepare Cutting Tools",
+                    "object": [
+                        [
+                            "pruners",
+                            "new"
+                        ]
+                    ],
+                    "action": "Clean your pruners properly.",
+                    "state_of_main_object": " The pruners are ready and clean for harvesting lavender."
+                },
+                {
+                    "step": "Locate a Good Bundle",
+                    "object": [
+                        [
+                            "lavender plant",
+                            "new"
+                        ],
+                        [
+                            "pruners",
+                            "similar shape"
+                        ]
+                    ],
+                    "action": "Identify a good lavender bundle to cut.",
+                    "state_of_main_object": " The pruners are clean and ready to use.\nstate 2"
+                },
+                {
+                    "step": "Cut Lavender Stems",
+                    "object": [
+                        [
+                            "pruners",
+                            "similar total",
+                            1
+                        ],
+                        [
+                            "lavender plant",
+                            "similar total",
+                            1
+                        ]
+                    ],
+                    "action": "Position the pruners near the plant\u2019s base and cut.",
+                    "state_of_main_object": " A cut lavender bundle is now separated from the plant, ready for collection."
+                },
+                {
+                    "step": "Collect Lavender",
+                    "object": [
+                        [
+                            "lavender bundle",
+                            "new"
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Place the harvested lavender stems into a basket.",
+                    "state_of_main_object": " A basket has been filled with freshly cut lavender stems."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.5,
+                    0.3,
+                    0.2
+                ],
+                [
+                    0.9,
+                    1.0,
+                    0.7,
+                    0.4
+                ],
+                [
+                    0.8,
+                    0.9,
+                    1.0,
+                    0.6
+                ],
+                [
+                    0.7,
+                    0.8,
+                    0.9,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "goal": "Harvesting Red Clover",
+            "steps": [
+                {
+                    "step": "Preparing the Equipment",
+                    "object": [
+                        [
+                            "scissors",
+                            "new"
+                        ],
+                        [
+                            "basket",
+                            "new"
+                        ]
+                    ],
+                    "action": "Prepare a pair of sharp scissors and a basket.",
+                    "state_of_main_object": " A pair of sharp scissors and a basket are ready for use."
+                },
+                {
+                    "step": "Identifying Mature Red Clover",
+                    "object": [
+                        [
+                            "scissors",
+                            "similar texture",
+                            1
+                        ],
+                        [
+                            "basket",
+                            "similar shape",
+                            1
+                        ],
+                        [
+                            "red clover",
+                            "new"
+                        ]
+                    ],
+                    "action": "Identify the red clover that is fully grown with red blossoms.",
+                    "state_of_main_object": " A pair of sharp scissors and an empty basket are at hand, with fully bloomed red clover in sight."
+                },
+                {
+                    "step": "Cutting the Red Clover",
+                    "object": [
+                        [
+                            "scissors",
+                            "total similar",
+                            2
+                        ],
+                        [
+                            "basket",
+                            "similar shape",
+                            2
+                        ],
+                        [
+                            "red clover",
+                            "similar shape",
+                            2
+                        ]
+                    ],
+                    "action": "Person uses the prepared scissors to cut the stem of red clover, just above the ground.",
+                    "state_of_main_object": " The fully grown red clover with red blossoms has been cut and still remains on the ground."
+                },
+                {
+                    "step": "Collecting the Red Clover",
+                    "object": [
+                        [
+                            "basket",
+                            "similar shape",
+                            3
+                        ],
+                        [
+                            "red clover",
+                            "similar shape",
+                            3
+                        ]
+                    ],
+                    "action": "Audience carefully puts the harvested red clover into the basket.",
+                    "state_of_main_object": " The basket is filled with harvested red clover, freshly cut from their stems."
+                }
+            ],
+            "relation": [
+                [
+                    1.0,
+                    0.6,
+                    0.4,
+                    0.2
+                ],
+                [
+                    0.6,
+                    1.0,
+                    0.8,
+                    0.5
+                ],
+                [
+                    0.4,
+                    0.8,
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.2,
+                    0.5,
+                    0.7,
+                    1.0
+                ]
+            ]
+        }
+    ]
+}
