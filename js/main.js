@@ -9423,34 +9423,39 @@ function load_data(samples, index, section_id) {
                 document.getElementById(`sect-${section_id}-sample-genhowto-action-${i}`).src = genhowto_action_path;
             }
 
-            // Load step
+            // // Load step
+
             document.getElementById(`sect-${section_id}-step-${i}`).textContent = samples[index].steps[i];
 
             // Load state
-            // document.getElementById(`sect-${section_id}-state-${i}`).textContent = samples[index].states[i];
-
-            // Load similarity
-            // let table_content = "";
-            // for (let j = 0; j < 4; j++) {
-            //     table_content += `<tr>`;
-            //     for (let k = 0; k < 4; k++) {
-            //         let value = parseFloat(samples[index].similarity[j][k]);
-            //         let class_name = "is-white"
-            //         if (value == 1.0) {
-            //             class_name = "is-link";
-            //         } else if (value > 0.7) {
-            //             class_name = "is-info";
-            //         } else if (value >= 0.5) {
-            //             class_name = "is-primary";
-            //         } else if (value > 0.0) {
-            //             class_name = "is-warning";
-            //         }
-            //         table_content += `<td class="${class_name}">${value}</td>`;
-            //     }
-            //     table_content += `</tr>`;
-            // }
-            // document.getElementById(`sect-${section_id}-similarity`).innerHTML = table_content;
+            if (section_id === 1){
+                document.getElementById(`sect-${section_id}-state-${i}`).textContent = samples[index].states[i];
+            }
+            if (section_id ==0) {
+                // Load similarity
+                let table_content = "";
+                for (let j = 0; j < 4; j++) {
+                    table_content += `<tr>`;
+                    for (let k = 0; k < 4; k++) {
+                        let value = parseFloat(samples[index].similarity[j][k]);
+                        let class_name = "is-white"
+                        if (value == 1.0) {
+                            class_name = "is-link";
+                        } else if (value > 0.7) {
+                            class_name = "is-info";
+                        } else if (value >= 0.5) {
+                            class_name = "is-primary";
+                        } else if (value > 0.0) {
+                            class_name = "is-warning";
+                        }
+                        table_content += `<td class="${class_name}">${value}</td>`;
+                    }
+                    table_content += `</tr>`;
+                }
+                document.getElementById(`sect-${section_id}-similarity`).innerHTML = table_content;
+            }
         }
+
     }
     // Load select options
     document.getElementById(`sect-${section_id}-sample-opt-${index}`).textContent = samples[index].title;
