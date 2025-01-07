@@ -9073,10 +9073,7 @@ let samples0 = [
         subdir: "gpt_1",
         index: 29,
     },
-    {
-        subdir: "gpt_0",
-        index: 8,
-    },
+    
     {
         subdir: "gpt_0",
         index: 4,
@@ -9109,6 +9106,10 @@ let samples0 = [
     {
         subdir: "gpt_1",
         index: 23,
+    },
+    {
+        subdir: "gpt_0",
+        index: 8,
     },
 ];
 
